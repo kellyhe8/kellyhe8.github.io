@@ -1,0 +1,300 @@
+
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic");
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap');
+
+:root { /* define variables here */
+    --accent-color1: #A494D6;
+    --accent-color2: #94BDD6;
+    --main-text-color: white;
+}
+
+html, body{
+    height: 100%;
+}
+/* @media(min-width:736px){ */
+    body{
+        display: flex;
+        flex-direction: column;
+        font-family: "Lato", "Futura", "Source Sans Pro", Helvetica, sans-serif;
+        font-size: 1em;
+        line-height: 1.15em; /* shortcut: `font: 15px/1.15 "Source Sans Pro", Helvetica, sans-serif` */
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#303030+0,000000+28,000000+72,303030+100 */
+        background: #303030; /* Old browsers */
+        background: -moz-linear-gradient(left,  #303030 0%, #000000 28%, #000000 72%, #303030 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(left,  #303030 0%,#000000 28%,#000000 72%,#303030 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right,  #303030 0%,#000000 28%,#000000 72%,#303030 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#303030', endColorstr='#303030',GradientType=1 ); /* IE6-9 */
+
+        color: var(--main-text-color);
+        padding-top: 2.59em;
+    }
+/* } */
+.stickyfooter{
+    flex: 1 0 auto;
+}
+
+
+/* ----------------------------- global start -----------------------------*/
+.middle.container{ /* use dot if it's a class, use # if id */
+    width: 60%; /* sets percentage so it's responsive */
+    margin: auto; /* centers it on the page */
+    overflow: hidden;
+}
+
+.whole.container{ /* use dot if it's a class, use # if id */
+    width: 100%; /* sets percentage so it's responsive */
+    margin: auto; /* centers it on the page */
+    overflow: hidden;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+.highlight{
+    color: var(--accent-color1);
+}
+
+.thinsubtitle{
+    font-weight: 350;
+}
+
+/* ----------------------------- navigation bar start -----------------------------*/
+.navbar {
+    overflow: hidden;
+    background-color: var(--accent-color2);
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    border-bottom: var(--main-text-color) 3px solid;
+}
+
+.navbar .current, .navbar .highlight{
+    background: var(--accent-color1);
+    color: var(--main-text-color);
+    font-weight: bold;
+}
+
+.navbartextarea{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar #navbaricon{
+    color: var(--main-text-color);
+    /* text-align: center; */
+    text-decoration: none;
+    /* border: 2px var(--main-text-color) solid; */
+}
+
+.navbar img{
+    /* max-width: 41px; */
+    border-radius: .4em;
+}
+
+#navbartabs{
+    /* border: 2px var(--main-text-color) solid; */
+}
+
+  /* Links inside the navbar */
+.navbar a {
+    float: left;
+    /* display: block; */
+    color: var(--main-text-color);
+    /* text-align: center; */
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+  /* Change background on mouse-over */
+.navbar a:hover {
+    background: black;
+    color: var(--main-text-color);
+    font-weight: bold;
+  }
+
+/* ----------------------------- introduction picture start -----------------------------*/
+
+/* Introduction Picture */
+#introduction{
+    min-height: 400px;
+    background: url('../img/background15.png') repeat center center;
+    text-align: center;
+}
+
+#introduction h1{
+    color: var(--main-text-color);
+    margin: 170px 0 40px 0;
+    font-size: 55px;
+}
+
+#introduction p{
+    color: var(--main-text-color);
+    font-size: 16px;
+    font-weight: 300;
+}
+
+
+/* ----------------------------- experience start ----------------------------- */
+
+@media(min-width:736px){
+    .experiencebox{
+        display: flex;
+        /* border: 2px var(--main-text-color) solid; */
+        margin: 20px 0 50px 0;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+#experience h1{
+    padding: 1.25em 0 1.25em 0;
+    text-align: center;
+    border-bottom: 1px var(--main-text-color) solid;
+    margin: 1.75em 0 1.75em 0;
+}
+
+#experience .experiencebox img{
+    border: .4em var(--accent-color1) solid;
+    width: 90%;
+    height: auto;
+    /* min-width: 180px; */
+    border-radius: 2.5em;
+}
+
+#experience .experienceimg{
+    flex-basis: 28%;
+    text-align: center;
+    /* border: 1px var(--main-text-color) solid; */
+    /* flex:3; */
+    /* order:1; */
+}
+#experience .experiencecontent{
+    flex-basis: 69%;
+    line-height: 1.35;
+    text-align: left;
+    /* border: 1px var(--main-text-color) solid; */
+    /* flex:6; */
+    /* order:2; */
+}
+video{
+    border-radius: 2em;
+    padding: 1em;
+}
+#experience h3{
+    text-transform: lowercase;
+    margin: 0;
+    padding: 0;
+    /* border: 1px var(--main-text-color) solid; */
+
+}
+#experience p{
+    text-transform: lowercase;
+    font-weight: 350;
+    margin: 0;
+    padding: 0;
+    /* border: 1px var(--main-text-color) solid; */
+    color: var(--accent-color2);
+
+}
+#experience .jobtitle{
+    text-transform: lowercase;
+    font-weight: 350;
+    font-size: .9em;
+    /* color: var(--main-text-color); */
+    color: var(--accent-color1);
+    margin: 0;
+    padding: 0;
+    /* border: 1px var(--main-text-color) solid; */
+}
+#experience .jobdatelocation{
+    text-transform: lowercase;
+    font-size: 1em;
+    color: var(--main-text-color);
+    /* color: var(--accent-color1); */
+    margin: 0;
+    padding: 0;
+    /* border: 1px var(--main-text-color) solid; */
+}
+
+
+/* ----------------------------- Footer ----------------------------- */
+footer{
+    flex-shrink: 0;
+}
+
+footer .footerbar{
+    overflow: hidden;
+    background-color: var(--accent-color2);
+    /* position: fixed;  */
+    bottom: 0; /* Position the bar at the bottom of the page */
+    width: 100%; /* Full width */
+    border-top: var(--main-text-color) 3px solid;
+}
+
+.footertextarea{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerbar .navbartext{
+    width: 55%;
+    margin: auto;
+}
+
+  /* github and linkedin links */
+.footerbar a {
+    float: left;
+    display: block;
+    color: var(--main-text-color);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+  /* Change background on mouse-over github and linked in */
+.footerbar a:hover {
+    background: var(--accent-color1);
+    color: var(--main-text-color);
+}
+
+#leftbar{
+    /* border: 2px var(--main-text-color) solid; */
+    /* flex-basis: 15%; */
+}
+
+/* text bar */
+#rightbar{
+    /* padding: .6em 0 0 0; weird bottom extension not centered bug unless 0 bottom padding */
+    text-align: right;
+    /* border: 2px var(--main-text-color) solid; */
+    /* flex-basis: 65%; */
+}
+
+form{
+    margin: 0;
+    padding: 0;
+}
+
+footer input[type="text"]{
+    padding: 5px;
+    height: 32px;
+    width: 395px;
+    color: var(--accent-color1);
+    border:0;
+    background-color: var(--main-text-color);
+    border-radius: .3em;
+    /* border: 0; */
+}
+
+.button1{ /* button 1 is global right now */
+    height: 32px;
+    background-color: var(--accent-color1);
+    padding: 0 10px 0 10px;
+    color: var(--main-text-color);
+    border: 0;
+    border-radius: .3em;
+}

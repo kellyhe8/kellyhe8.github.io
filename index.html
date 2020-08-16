@@ -1,1 +1,104 @@
-yo werld
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="description" content="kelly's personal website"> <!-- desc and keywords? -->
+        <meta name="keywords" content="kelly he, personal website, resume projects"> 
+        <title> kelly's home </title> <!-- title on top in tab area -->
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- add jQuery CDN (content delivery network) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(function(){
+                $('#footerbar').load('footer.html');
+            })
+        </script>
+        <body>
+            <div class="stickyfooter">
+                <header>
+                    <section class="navbar">
+                        <div class="middle container">
+                            <div class="navbartextarea">
+                                <!-- <div id="navbaricon">
+                                    <img src="./img/iconlogo.png" alt="">
+                                </div> -->
+                                <a href="index.html" id="navbaricon" class="fa fa-user-circle" style="font-size:1.6em"></a>
+                                <div id="navbartabs"> 
+                                    <a class="current" href="index.html"><span class="fa fa-home"></span> home</a>
+                                    <a href="blogs.html"><span class="fa fa-sticky-note-o"></span> blogs</a>
+                                    <a href="favorites.html"><span class="fa fa-thumbs-o-up"></span> recs and faves</a>
+                                    <a href="notes.html"><span class="fa fa-pencil-square-o"></span> notes</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </header>
+
+
+                <section id="introduction" class= "whole container">
+                    <h1>hey, i'm <span class="highlight">kelly</span></h1>
+                    <p>website is in the making :)</p>
+                </section>
+
+                <section id="experience" class="middle container">
+                    <h1>my software experience</h1>
+                        <div class="experiencebox">
+                            <div class="experienceimg">
+                                <img src="./img/salesforce.png">
+                            </div>
+                            <div class="experiencecontent">
+                                <h3>salesforce <span class="jobtitle"> - software engineering intern</span></h3>
+                                <p class="jobdatelocation">burlington, massachusetts (remote) <br> jun 2020 - aug 2020</p>
+                                <p class="jobdescription">i worked on creating a google assistant ecommerce application! i showcased the capabilities
+                                    of headless commerce by integrating google assistant devices with the commerce sdk. i did this by using a back end for 
+                                    front end (BFF) pattern, which resolves data from the commerce sdk and provides a GraphQL endpoint. this endpoint was 
+                                    used by two other team members, and we worked together closely to integrate all the functionalities. i then used dialogflow,
+                                    which handles the natural language processing, to connect google assistant to the BFF.
+                                    below is a demo of the functionality.</p>
+                                <video width="200" height="400" controls>
+                                    <source src="/img/salesforcedemo.mov" type="video/mov">
+                                    <source src="/img/salesforcedemo.mov" type="video/ogg">
+                                  Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </div>
+
+                        <div class="experiencebox">
+                            <div class="experienceimg">
+                                <img src="./img/ygn.png">
+                            </div>
+                            <div class="experiencecontent">
+                                <h3>Youth Global Network: Project-C <span class="jobtitle"> - software engineering intern</span></h3>
+                                <p class="jobdatelocation">sha tin, hong kong <br> jun 2019 - aug 2019</p>
+                                <p class="jobdescription">project-c's mission is to teach underprivileged children coding by providing an easy-to-learn app development 
+                                    platform. during my internship, i analyzed data about the students using this platform. i calculated statistics such as usage time,
+                                    frequency of app components, and tutorial completion time, which could then be relayed to teachers to help
+                                    them give tailored guidance to their students.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="experiencebox">
+                            <div class="experienceimg">
+                                <img src="./img/hosta.png">
+                            </div>
+                            <div class="experiencecontent">
+                                <h3>hosta labs <span class="jobtitle"> - software engineering extern</span></h3>
+                                <p class="jobdatelocation">cambridge, massachusetts <br> jan 2019 - feb 2019</p>
+                                <p class="jobdescription">hosta labs is creating 3d interactive models of spaces from 2d images. i externed for about a month and
+                                    i compared the accuracy of their depth perception algorithms to those built in on newer iphones. i also worked on the ios application,
+                                    displaying a mock 3d model in the app.
+                                </p>
+                            </div>
+                        </div>
+                </section>
+            </div>
+
+            <footer>
+                <div id="footerbar"></div>
+            </footer>
+        </body>
+    </head>
+</html>
