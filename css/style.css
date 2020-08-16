@@ -11,34 +11,48 @@
 html, body{
     height: 100%;
 }
-/* @media(min-width:736px){ */
-    body{
-        display: flex;
-        flex-direction: column;
-        font-family: "Lato", "Futura", "Source Sans Pro", Helvetica, sans-serif;
-        font-size: 1em;
-        line-height: 1.15em; /* shortcut: `font: 15px/1.15 "Source Sans Pro", Helvetica, sans-serif` */
-        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#303030+0,000000+28,000000+72,303030+100 */
-        background: #303030; /* Old browsers */
-        background: -moz-linear-gradient(left,  #303030 0%, #000000 28%, #000000 72%, #303030 100%); /* FF3.6-15 */
-        background: -webkit-linear-gradient(left,  #303030 0%,#000000 28%,#000000 72%,#303030 100%); /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(to right,  #303030 0%,#000000 28%,#000000 72%,#303030 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#303030', endColorstr='#303030',GradientType=1 ); /* IE6-9 */
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: "Lato", "Futura", "Source Sans Pro", Helvetica, sans-serif;
+    font-size: 1em;
+    line-height: 1.15em; /* shortcut: `font: 15px/1.15 "Source Sans Pro", Helvetica, sans-serif` */
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#303030+0,000000+28,000000+72,303030+100 */
+    background: #303030; /* Old browsers */
+    background: -moz-linear-gradient(left,  #303030 0%, #000000 28%, #000000 72%, #303030 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  #303030 0%,#000000 28%,#000000 72%,#303030 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  #303030 0%,#000000 28%,#000000 72%,#303030 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#303030', endColorstr='#303030',GradientType=1 ); /* IE6-9 */
 
-        color: var(--main-text-color);
+    color: var(--main-text-color);
+}
+@media(min-width:736px){
+    body{
         padding-top: 2.59em;
     }
-/* } */
+}
+
 .stickyfooter{
     flex: 1 0 auto;
 }
 
 
 /* ----------------------------- global start -----------------------------*/
-.middle.container{ /* use dot if it's a class, use # if id */
-    width: 60%; /* sets percentage so it's responsive */
-    margin: auto; /* centers it on the page */
-    overflow: hidden;
+
+@media(min-width:736px){
+    .middle.container{ /* use dot if it's a class, use # if id */
+        width: 60%; /* sets percentage so it's responsive */
+        margin: auto; /* centers it on the page */
+        overflow: hidden;
+    }
+}
+
+@media(max-width:736px){
+    .middle.container{ /* use dot if it's a class, use # if id */
+        width: 95%; /* sets percentage so it's responsive */
+        margin: auto; /* centers it on the page */
+        overflow: hidden;
+    }
 }
 
 .whole.container{ /* use dot if it's a class, use # if id */
@@ -61,14 +75,26 @@ ul{
 }
 
 /* ----------------------------- navigation bar start -----------------------------*/
-.navbar {
-    overflow: hidden;
-    background-color: var(--accent-color2);
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
-    border-bottom: var(--main-text-color) 3px solid;
+@media(min-width:736px){
+    .navbar {
+        overflow: hidden;
+        background-color: var(--accent-color2);
+        position: fixed; /* Set the navbar to fixed position */
+        top: 0; /* Position the navbar at the top of the page */
+        width: 100%; /* Full width */
+        border-bottom: var(--main-text-color) 3px solid;
+    }
 }
+@media(max-width:736px){
+    .navbar {
+        overflow: hidden;
+        background-color: var(--accent-color2);
+        top: 0; /* Position the navbar at the top of the page */
+        width: 100%; /* Full width */
+        border-bottom: var(--main-text-color) 3px solid;
+    }
+}
+
 
 .navbar .current, .navbar .highlight{
     background: var(--accent-color1);
@@ -149,6 +175,13 @@ ul{
     }
 }
 
+@media(max-width:736px){
+    .experiencebox{
+        /* border: 2px var(--main-text-color) solid; */
+        margin: 20px 0 50px 0;
+    }
+}
+
 #experience h1{
     padding: 1.25em 0 1.25em 0;
     text-align: center;
@@ -160,7 +193,7 @@ ul{
     border: .4em var(--accent-color1) solid;
     width: 90%;
     height: auto;
-    /* min-width: 180px; */
+    max-width: 290px;
     border-radius: 2.5em;
 }
 
@@ -251,7 +284,7 @@ footer .footerbar{
     display: block;
     color: var(--main-text-color);
     text-align: center;
-    padding: 14px 16px;
+    padding: 0 16px;
     text-decoration: none;
 }
 
@@ -271,7 +304,7 @@ footer .footerbar{
     /* padding: .6em 0 0 0; weird bottom extension not centered bug unless 0 bottom padding */
     text-align: right;
     /* border: 2px var(--main-text-color) solid; */
-    /* flex-basis: 65%; */
+    flex-basis: 70%;
 }
 
 form{
@@ -282,7 +315,7 @@ form{
 footer input[type="text"]{
     padding: 5px;
     height: 32px;
-    width: 395px;
+    width: 86%;
     color: var(--accent-color1);
     border:0;
     background-color: var(--main-text-color);
