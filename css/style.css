@@ -200,6 +200,7 @@ ul{
 #experience .experienceimg{
     flex-basis: 28%;
     text-align: center;
+    margin: 0 0 1.5em 0;
     /* border: 1px var(--main-text-color) solid; */
     /* flex:3; */
     /* order:1; */
@@ -212,10 +213,16 @@ ul{
     /* flex:6; */
     /* order:2; */
 }
+
 video{
+    display: block;
+    margin: auto;
     border-radius: 2em;
     padding: 1em;
 }
+
+
+
 #experience h3{
     text-transform: lowercase;
     margin: 0;
