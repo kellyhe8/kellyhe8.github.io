@@ -4,10 +4,40 @@ import { withStyles } from "@material-ui/core/styles";
 
 import { Box, Typography, Avatar, Link, Divider } from "@material-ui/core";
 
-const styles = (theme) => ({});
+const styles = (theme) => ({
+  avatarBox: {
+    flexBasis: "18%",
+    justifyContent: "center",
+    border: "1px white solid",
+    [theme.breakpoints.down("md")]: {
+      flexBasis: "24%",
+    },
+    [theme.breakpoints.down("sm")]: {
+      flexBasis: "32%",
+    },
+  },
+  avatarPic: {
+    width: "90%",
+    height: "90%",
+    minWidth: "40px",
+    border: `.1rem ${theme.palette.accent1.main} solid`,
+    margin: "auto",
+    variant: "circle",
+  },
+  wordBox: {
+    flexBasis: "80%",
+    border: "1px white solid",
+    [theme.breakpoints.down("md")]: {
+      flexBasis: "74%",
+    },
+    [theme.breakpoints.down("sm")]: {
+      flexBasis: "66%",
+    },
+  },
+});
 
 const BlogListEntry = (props) => {
-  // const { classes } = props;
+  const { classes } = props;
 
   //   const classes = useStyles();
   const theme = useTheme();
@@ -23,26 +53,14 @@ const BlogListEntry = (props) => {
             alignItems: "center",
           }}
         >
-          <Box
-            style={{
-              flexBasis: "14%",
-              justifyContent: "center",
-            }}
-          >
+          <Box className={classes.avatarBox}>
             <Avatar
               alt="blog picture"
               src={props.image}
-              style={{
-                width: "130px",
-                height: "130px",
-                maxWidth: "200px",
-                border: `.1rem ${theme.palette.accent1.main} solid`,
-                margin: "auto",
-                variant: "circle",
-              }}
+              className={classes.avatarPic}
             ></Avatar>
           </Box>
-          <Box style={{ flexBasis: "82%" }}>
+          <Box className={classes.wordBox}>
             <Link href={props.bloglink} variant="h6" style={{ color: "white" }}>
               {props.title}
             </Link>

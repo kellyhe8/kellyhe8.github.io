@@ -9,6 +9,16 @@ import animalImg from "../img/animal.jpg";
 import angryCatImg from "../img/angrycat.jpg";
 
 const useStyles = makeStyles((theme) => ({
+  headingText: {
+    margin: "1em 0 .8em 0",
+    textAlign: "center",
+    fontSize: "2rem",
+    lineHeight: "1.15rem",
+    [theme.breakpoints.down("md")]: {
+      margin: "1em 0 .3em 0",
+      lineHeight: "2rem",
+    },
+  },
   middleContainer: {
     margin: "3rem auto 6rem auto",
     padding: "2rem",
@@ -38,15 +48,7 @@ const RecsFaves = () => {
     <>
       <Navbar />
       <Box className={classes.middleContainer}>
-        <Typography
-          variant="h1"
-          style={{
-            margin: "1em 0 .8em 0",
-            textAlign: "center",
-            fontSize: "2rem",
-            lineHeight: "1.15rem",
-          }}
-        >
+        <Typography variant="h1" className={classes.headingText}>
           recommendations and favorites coming soon...
         </Typography>
         <Typography
@@ -59,7 +61,7 @@ const RecsFaves = () => {
             borderBottom: `2px ${theme.palette.accent1.main} solid`,
           }}
         >
-          in the meantime, you can check out my wannabe-mediocre blogs
+          in the meantime, you can check out my almost-mediocre blogs
         </Typography>
         <BlogListEntry
           image={animalImg}
