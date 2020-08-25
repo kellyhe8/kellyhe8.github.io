@@ -62,7 +62,11 @@ const theme = createMuiTheme({
 
 ReactDOM.render(
   <MuiThemeProvider theme={theme}>
+<<<<<<< HEAD
     <Router basename={process.env.PUBLIC_URL}>
+=======
+    <Router>
+>>>>>>> 927056aa34585b06f842d9db9d94367b2b8a3eec
       <App />
     </Router>
   </MuiThemeProvider>,
