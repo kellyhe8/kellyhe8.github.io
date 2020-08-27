@@ -17,24 +17,39 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/$
 //   section: { color: "white", textAlign: "center", margin: 30 },
 // });
 
+const useStyles = makeStyles((theme) => ({
+  // making particles span the whole screen. play around with params, enable, valuearea, etc
+  particlesCanva: {
+    position: "absolute",
+    obacity: "0.3",
+  },
+  bodyContent: {
+    display: "flex",
+    flexDirection: "column",
+  },
+}));
+
 const Resume = () => {
   // const [numPages, setNumPages] = useState(null);
   // const [pageNumber, setPageNumber] = useState(1);
+
   return (
     <>
       <Navbar />
-      <Box
-        style={{
-          width: "34.5%",
-          // border: "2px black solid",
-          margin: "4rem auto 0 auto",
-        }}
-      >
-        <Document file={resume}>
-          <Page pageNumber={1}></Page>
-        </Document>
+      <Box className={classes.middleContainer}>
+        <Box
+          style={{
+            width: "34.5%",
+            // border: "2px black solid",
+            margin: "4rem auto 0 auto",
+          }}
+        >
+          <Document file={resume}>
+            <Page pageNumber={1}></Page>
+          </Document>
+        </Box>
+        <WorkExperience />
       </Box>
-      <WorkExperience />
       <Contact />
     </>
   );
