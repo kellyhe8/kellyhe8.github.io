@@ -8,7 +8,7 @@ const styles = (theme) => ({
   avatarBox: {
     flexBasis: "18%",
     justifyContent: "center",
-    border: "1px white solid",
+    // border: "1px white solid",
     [theme.breakpoints.down("md")]: {
       flexBasis: "24%",
     },
@@ -26,7 +26,7 @@ const styles = (theme) => ({
   },
   wordBox: {
     flexBasis: "80%",
-    border: "1px white solid",
+    // border: "1px white solid",
     [theme.breakpoints.down("md")]: {
       flexBasis: "74%",
     },

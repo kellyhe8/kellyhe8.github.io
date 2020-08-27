@@ -6,8 +6,8 @@ import Home from "./components/HomePage";
 import Resume from "./components/Resume";
 import Blogs from "./components/BlogsPage";
 import RecsFaves from "./components/RecsFaves";
-import BlogPost1 from "./components/BlogPosts/BlogPost1";
-import BlogPost2 from "./components/BlogPosts/BlogPost2";
+import BlogPost1 from "./components/BlogPost1";
+import BlogPost2 from "./components/BlogPost2";
 
 function App() {
   return (

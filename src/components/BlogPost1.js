@@ -1,9 +1,9 @@
 import React from "react";
-import Navbar from "../navmenu/Navbar";
-import Contact from "../Contact";
+import Navbar from "./navmenu/Navbar";
+import Contact from "./Contact";
 import { withStyles } from "@material-ui/core/styles";
-import BlogPostTemplate from "./BlogPostTemplate";
-import backgroundImg from "../../img/animal.jpg";
+import BlogPostTemplate from "./BlogPosts/BlogPostTemplate";
+import backgroundImg from "../img/animal.jpg";
 import { Typography, Box } from "@material-ui/core";
 
 const styles = (theme) => ({
