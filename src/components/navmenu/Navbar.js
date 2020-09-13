@@ -141,7 +141,9 @@ const Navbar = () => {
       <Box component="nav">
         <AppBar position="static" className={classes.appbarContent}>
           <Toolbar className={classes.contentArea}>
-            <Avatar src={favicon} variant="square" alt="kh"></Avatar>
+            <Link to="/">
+              <Avatar src={favicon} variant="square" alt="kh"></Avatar>
+            </Link>
 
             {/* <Typography variant="h5">
               <span className={classes.highlight2}>k</span>

@@ -49,7 +49,7 @@ const Blogs = () => {
             borderBottom: `1px white solid`,
           }}
         >
-          blogs
+          Blogs
         </Typography>
         {/* <Typography
           variant="h2"
@@ -77,7 +77,7 @@ const Blogs = () => {
           bloglink="/blogpost2"
           date="August 15, 2020"
         />
-        There may be a routing issue when you click on each post - I'm working on it!
+        There's a routing issue when you click on a blog post - I'm working on it!
       </Box>
       <Contact />
     </>
