@@ -59,7 +59,7 @@ const Intro = () => {
         <Avatar className={classes.avatar} src={avatar} alt="kelly he" />
       </Grid>
       <Typography className={classes.title} variant="h4">
-        Hey, I'm <span className={classes.highlight2}>Kelly</span>
+        Hi, I'm <span className={classes.highlight2}>Kelly</span>
         {/* <Typed strings={["hey i'm kelly"]} typeSpeed={80}></Typed> */}
       </Typography>
       <Typography className={classes.subtitle} variant="h5">
