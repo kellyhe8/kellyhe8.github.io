@@ -4,9 +4,6 @@ import Contact from "./Contact";
 import { Typography, Box } from "@material-ui/core";
 import { useTheme } from "@material-ui/core/styles";
 import { makeStyles } from "@material-ui/core/styles";
-import BlogListEntry from "./BlogPosts/BlogListEntry";
-import animalImg from "../img/animal.jpg";
-import angryCatImg from "../img/angrycat.jpg";
 
 const useStyles = makeStyles((theme) => ({
   headingText: {
@@ -14,6 +11,8 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
     fontSize: "2rem",
     lineHeight: "1.15rem",
+    borderBottom: `1px white solid`,
+    padding: "0 0 1em 0",
     [theme.breakpoints.down("md")]: {
       margin: "1em 0 .3em 0",
       lineHeight: "2rem",
@@ -36,8 +35,8 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("sm")]: {
       width: "90%",
     },
-    border: "2px white solid",
-    borderRadius: ".7rem",
+    // border: "2px white solid",
+    // borderRadius: ".7rem",
   },
 }));
 
@@ -49,9 +48,9 @@ const RecsFaves = () => {
       <Navbar />
       <Box className={classes.middleContainer}>
         <Typography variant="h1" className={classes.headingText}>
-          recommendations and favorites coming soon...
+          recommendations and favorites
         </Typography>
-        <Typography
+        {/* <Typography
           variant="h2"
           style={{
             margin: "0 0 3em 0",
@@ -61,9 +60,9 @@ const RecsFaves = () => {
             borderBottom: `2px ${theme.palette.accent1.main} solid`,
           }}
         >
-          in the meantime, you can check out my almost-mediocre blogs
-        </Typography>
-        <BlogListEntry
+          in the meantime, you can check out my blogs
+        </Typography> */}
+        {/* <BlogListEntry
           image={animalImg}
           title='"animal"'
           subtitle='the picture I found when I searched "animal" on google'
@@ -76,8 +75,8 @@ const RecsFaves = () => {
           subtitle="the story of me and cats"
           bloglink="blogpost2"
           date="August 15, 2020"
-        />
-        more coming soon...
+        /> */}
+        coming soon...
       </Box>
       <Contact />
     </>

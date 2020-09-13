@@ -3,12 +3,12 @@ import Navbar from "./navmenu/Navbar";
 import WorkExperience from "./timeline/WorkExperience";
 import Contact from "./Contact";
 // import { Page, Text, View, Document, StyleSheet, pdfjs } from "react-pdf";
-import { Document, Page, pdfjs } from "react-pdf";
+// import { Document, Page, pdfjs } from "react-pdf";
 import { Box } from "@material-ui/core";
 
-import resume from "../img/websiteresume.pdf";
+import resume from "../img/websiteresume.jpg";
 
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
+// pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 // import { Document } from "react-pdf/dist/entry.webpack";
 
@@ -23,7 +23,11 @@ const Resume = () => {
   return (
     <>
       <Navbar />
-      <Box
+      <Box style={{width:"65%", margin: "4rem auto 0 auto"}}>
+      <img src={resume} style={{maxWidth:"100%"}}/>
+      </Box>
+      
+      {/* <Box
         style={{
           width: "34.5%",
           // border: "2px black solid",
@@ -33,7 +37,7 @@ const Resume = () => {
         <Document file={resume}>
           <Page pageNumber={1}></Page>
         </Document>
-      </Box>
+      </Box> */}
       <WorkExperience />
       <Contact />
     </>

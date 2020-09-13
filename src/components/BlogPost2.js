@@ -1,7 +1,6 @@
-import React from "react";
+import React, { Component } from 'react';
 import Navbar from "./navmenu/Navbar";
 import Contact from "./Contact";
-
 import { withStyles } from "@material-ui/core/styles";
 import BlogPostTemplate from "./BlogPosts/BlogPostTemplate";
 import backgroundImg from "../img/angrycat.jpg";
@@ -12,13 +11,13 @@ const styles = (theme) => ({
     margin: "0 auto 5rem auto",
     width: "60%",
     [theme.breakpoints.down("xl")]: {
-      width: "60%",
+      width: "50%",
     },
     [theme.breakpoints.down("lg")]: {
-      width: "65%",
+      width: "60%",
     },
     [theme.breakpoints.down("md")]: {
-      width: "75%",
+      width: "70%",
     },
     [theme.breakpoints.down("sm")]: {
       width: "90%",
@@ -34,12 +33,26 @@ const styles = (theme) => ({
     margin: "0 1rem 1rem 1rem",
     textAlign: "justify",
   },
+  linktable: {
+    display: "flex",
+    justifyContent: "space-between",
+    flexDirection: "row",
+    [theme.breakpoints.down("md")]: {
+      flexDirection: "column",
+    },
+  },
   listLink: {
     color: theme.palette.accent1.main,
-    flexBasis: "15%",
+    flexBasis: "20%",
+    [theme.breakpoints.down("md")]: {
+      flexBasis: "100%",
+    },
   },
   listBody: {
-    flexBasis: "83%",
+    flexBasis: "77%",
+    [theme.breakpoints.down("md")]: {
+      flexBasis: "100%",
+    },
   },
   signature: {
     // textAlign: "right",
@@ -47,8 +60,9 @@ const styles = (theme) => ({
   },
 });
 
-const BlogPost2 = (props) => {
-  const { classes } = props;
+class BlogPost2 extends Component{
+  render() {
+  const { classes } = this.props;
 
   return (
     <>
@@ -84,22 +98,22 @@ const BlogPost2 = (props) => {
         </Typography>
         <Typography variant="body1" className={classes.paragraphContent}>
           <List>
-            <ListItem divider>
+            <ListItem divider className={classes.linktable}>
               <Link
                 href="https://www.reddit.com/r/aww/"
                 variant="body1"
                 className={classes.listLink}
               >
-                aww subreddit
+                r/aww subreddit
               </Link>
               <Typography variant="body1" className={classes.listBody}>
                 Even though this is "A subreddit for cute and cuddly pictures",
                 implying that it's a space for all cute and cuddly animals, you
-                will find an overwhelming number if cat pictures because they're
+                will find an overwhelming number of cat pictures because they're
                 the best.
               </Typography>
             </ListItem>
-            <ListItem divider>
+            <ListItem divider className={classes.linktable}>
               <Link
                 href="https://www.instagram.com/pleasantcats/"
                 variant="body1"
@@ -115,7 +129,7 @@ const BlogPost2 = (props) => {
                 bad vat video? Well that's a topic for another blog post.
               </Typography>
             </ListItem>
-            <ListItem divider>
+            <ListItem divider className={classes.linktable}>
               <Link
                 href="https://www.instagram.com/cats_of_instagram"
                 variant="body1"
@@ -132,7 +146,7 @@ const BlogPost2 = (props) => {
                 see the appeal of the cute.
               </Typography>
             </ListItem>
-            <ListItem divider>
+            <ListItem divider className={classes.linktable}>
               <Link
                 href="https://www.instagram.com/catsdoingthings"
                 variant="body1"
@@ -161,6 +175,8 @@ const BlogPost2 = (props) => {
       <Contact />
     </>
   );
+  }
 };
+
 
 export default withStyles(styles)(BlogPost2);

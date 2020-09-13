@@ -44,13 +44,13 @@ const Footer = () => {
         target="_blank"
         icon={<GitHub fontSize="large" />}
       />
-      <BottomNavigationAction
+      {/* <BottomNavigationAction
         className={classes.root}
         style={{ padding: 0 }}
         href="https://github.com/kellyhesf"
         target="_blank"
         icon={<GitHub fontSize="large" />}
-      ></BottomNavigationAction>
+      ></BottomNavigationAction> */}
     </BottomNavigation>
   );
 };

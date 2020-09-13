@@ -20,7 +20,7 @@ const styles = (theme) => ({
     width: "90%",
     height: "90%",
     minWidth: "40px",
-    border: `.1rem ${theme.palette.accent1.main} solid`,
+    // border: `.1rem ${theme.palette.accent1.main} solid`,
     margin: "auto",
     variant: "circle",
   },

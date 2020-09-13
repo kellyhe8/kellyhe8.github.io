@@ -26,8 +26,8 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("sm")]: {
       width: "90%",
     },
-    border: "2px white solid",
-    borderRadius: ".5rem",
+    // border: "2px white solid",
+    // borderRadius: ".5rem",
   },
 }));
 
@@ -42,14 +42,16 @@ const Blogs = () => {
           variant="h1"
           style={{
             margin: "1em 0 .8em 0",
+            padding: "0 0 1em 0",
             textAlign: "center",
             fontSize: "2rem",
             lineHeight: "1.15rem",
+            borderBottom: `1px white solid`,
           }}
         >
           blogs
         </Typography>
-        <Typography
+        {/* <Typography
           variant="h2"
           style={{
             margin: "0 0 3em 0",
@@ -60,19 +62,19 @@ const Blogs = () => {
           }}
         >
           attempting to write
-        </Typography>
+        </Typography> */}
         <BlogListEntry
           image={animalImg}
           title='"animal"'
           subtitle='the picture I found when I searched "animal" on google'
-          bloglink="blogpost1"
+          bloglink="/blogpost1"
           date="August 15, 2020"
         />
         <BlogListEntry
           image={angryCatImg}
           title="fan of cats"
           subtitle="the story of me and cats"
-          bloglink="blogpost2"
+          bloglink="/blogpost2"
           date="August 15, 2020"
         />
         more coming soon...

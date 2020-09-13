@@ -3,8 +3,7 @@ import { Link } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
 import MobileRightMenuSlider from "@material-ui/core/Drawer";
 import Footer from "./Footer";
-import avatar from "../../img/me.jpg";
-import favicon from "../../favicon/apple-touch-icon.png";
+import favicon from "../../img/drawavatarnobkg.png";
 
 import {
   AppBar,
@@ -39,7 +38,7 @@ const useStyles = makeStyles((theme) => ({
     margin: "1rem auto",
     width: theme.spacing(15), // different way to set size of avatar pic
     height: theme.spacing(15),
-    border: `.1rem ${theme.palette.accent2.main} solid`,
+    // border: `.1rem ${theme.palette.accent2.main} solid`,
   },
   menuItem: {
     margin: "1rem auto",
@@ -114,7 +113,7 @@ const Navbar = () => {
       component="div"
       onClick={toggleSlider(slider, false)}
     >
-      <Avatar className={classes.avatar} src={avatar} alt="kelly he"></Avatar>
+      <Avatar className={classes.avatar} src={favicon} alt="kelly he"></Avatar>
       <Typography variant="h5" align="center" style={{ margin: "1rem" }}>
         kelly he
       </Typography>
@@ -142,7 +141,7 @@ const Navbar = () => {
       <Box component="nav">
         <AppBar position="static" className={classes.appbarContent}>
           <Toolbar className={classes.contentArea}>
-            <Avatar src={favicon} variant="rounded" alt="kh"></Avatar>
+            <Avatar src={favicon} variant="square" alt="kh"></Avatar>
 
             {/* <Typography variant="h5">
               <span className={classes.highlight2}>k</span>

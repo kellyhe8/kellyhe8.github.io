@@ -3,7 +3,7 @@ import { Typography, Avatar, Grid, Box } from "@material-ui/core";
 import Typed from "react-typed";
 import { makeStyles } from "@material-ui/core/styles";
 import avatar from "../img/me.jpg";
-import backgroundImg from "../img/background11.png";
+import backgroundImg from "../img/background1.png";
 
 // CSS STYLES
 const useStyles = makeStyles((theme) => ({
@@ -23,6 +23,12 @@ const useStyles = makeStyles((theme) => ({
     zIndex: 1, // specifies stack order
     // border: "2px white solid",
     borderBottom: `3px ${theme.palette.primary.light} solid`,
+    [theme.breakpoints.down("xl")]: {
+      height: "600px",
+    },
+    [theme.breakpoints.down("md")]: {
+      height: "600px",
+    },
   },
   avatar: {
     display: "block",
@@ -59,13 +65,11 @@ const Intro = () => {
       <Typography className={classes.subtitle} variant="h5">
         <Typed
           strings={[
-            "howdy do?",
-            "scroll down to see some stuff",
-            "there's also a menu on the top right",
-            "better blog posts hopefully coming soon...",
-            "this site is built using react and material ui, both of which i just started learning...",
-            "but you can find the code for this site on my personal github",
-            "this font's question mark is interesting ????",
+            "welcome to my website!",
+            "feel free to give me feedback on the site and contact me in the box below",
+            "this site is built using react and material ui",
+            "you can find the code for this site on my personal github",
+            "this font's question mark is interesting; howdy do??!",
           ]}
           typeSpeed={50}
           loop

@@ -69,6 +69,7 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
     // textTransform: "uppercase",
     margin: "0 0 1rem 0",
+    padding: "1rem 0 0 0"
   },
   socialContainer: {
     display: "flex",
@@ -86,7 +87,8 @@ const useStyles = makeStyles((theme) => ({
   // },
   iconStyle: {
     margin: "0 1rem",
-    color: theme.palette.accent1.main,
+    color: theme.palette.primary.main,
+    // color: theme.palette.accent1.main, //pink icons
   },
 }));
 
@@ -213,9 +215,9 @@ const Contact = () => {
         </form>
       </Box>
       <Box className={classes.socialContainer}>
-        <Typography className={classes.heading} variant="h5">
+        {/* <Typography className={classes.heading} variant="h5">
           find me online
-        </Typography>
+        </Typography> */}
         <Box className={classes.socialContainerIcons}>
           <IconButton
             href="https://www.linkedin.com/in/kellhe/"
@@ -239,11 +241,11 @@ const Contact = () => {
                 className={classes.iconStyle}
               />
               <Typography style={{ fontSize: "1rem" }}>
-                personal github
+                github
               </Typography>
             </Box>
           </IconButton>
-          <IconButton href="https://github.com/kellyhesf" target="_blank">
+          {/* <IconButton href="https://github.com/kellyhesf" target="_blank">
             <Box className={classes.socialContainer}>
               <FontAwesomeIcon
                 icon={faGithub}
@@ -252,7 +254,7 @@ const Contact = () => {
               />
               <Typography style={{ fontSize: "1rem" }}>work github</Typography>
             </Box>
-          </IconButton>
+          </IconButton> */}
         </Box>
       </Box>
     </Box>
