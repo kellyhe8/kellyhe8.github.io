@@ -86,7 +86,7 @@ const WorkExperienceEntry = (props) => {
             // color: "white",
             textAlign: "center",
             padding: "0 0 .3rem 0",
-            textTransform: "lowercase",
+            // textTransform: "lowercase",
           }}
         >
           {props.company}
@@ -97,7 +97,7 @@ const WorkExperienceEntry = (props) => {
             color: theme.palette.accent1.main,
             textAlign: "center",
             padding: "0 0 .6rem 0",
-            textTransform: "lowercase",
+            // textTransform: "lowercase",
           }}
         >
           {props.role} | {props.location} <br />
@@ -111,6 +111,15 @@ const WorkExperienceEntry = (props) => {
             // fontWeight: "",
             textAlign: "justify",
             // textTransform: "lowercase",
+            [theme.breakpoints.down("xl")]: {
+              textAlign: "justify",
+            },
+            // [theme.breakpoints.down("md")]: {
+            //   width: "95%",
+            // },
+            [theme.breakpoints.down("md")]: {
+              textAlign: "left",
+            },
           }}
         >
           {props.description}

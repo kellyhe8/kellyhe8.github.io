@@ -48,7 +48,7 @@ class BlogPost1 extends Component {
         <Box className={classes.contentArea}>
           <BlogPostTemplate
             title='"animal"'
-            subtitle='the picture I found when I searched "animal" on google'
+            subtitle='A picture I found when I searched "animal" on Google'
             date="August 15, 2020"
             image={backgroundImg}
           />

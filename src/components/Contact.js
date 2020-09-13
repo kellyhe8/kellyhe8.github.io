@@ -58,7 +58,7 @@ const useStyles = makeStyles((theme) => ({
     // borderColor: "tomato",
     width: "100px",
     // margin: "1rem 0 0 0",
-    textTransform: "lowercase",
+    textTransform: "capitalize",
     background: theme.palette.accent2.main,
     color: "white",
     borderRadius: ".3rem",
@@ -123,7 +123,7 @@ const Contact = () => {
     <Box className={classes.contactContainer} component="div">
       <Box component="form" className={classes.form}>
         <Typography className={classes.heading} variant="h5">
-          contact me
+          Contact Me
         </Typography>
         <iframe
           title="hidden_iframe"
@@ -138,7 +138,7 @@ const Contact = () => {
         >
           <Input
             fullWidth={true}
-            placeholder="your contact info (optional)"
+            placeholder="Your contact info (optional)"
             // variant="filled"
             // variant="outlined"
             // inputProps={{ style: { color: "white" } }} // this is how to change the input text color
@@ -152,7 +152,7 @@ const Contact = () => {
           <br />
           <Input
             fullWidth={true}
-            placeholder="tell me a joke, drop your linked in, feedback about the site, food recommendations?"
+            placeholder="Tell me a joke, drop your linked in, feedback about the site, food recommendations?"
             // variant="filled"
             // margin="dense"
             // size="medium"
@@ -167,7 +167,7 @@ const Contact = () => {
             <Button
               variant="contained"
               className={classes.button}
-              endIcon={<Arrow>send</Arrow>}
+              endIcon={<Arrow/>}
               onClick={() => {
                 const submittedText = document.getElementById(
                   "submittedNotification"
@@ -199,7 +199,7 @@ const Contact = () => {
                 display: "none",
               }}
             >
-              thanks! submitted
+              Submitted - Thanks! 
             </Typography>
             <Typography
               id="errorNotification"
@@ -208,7 +208,7 @@ const Contact = () => {
                 display: "none",
               }}
             >
-              please enter some text
+              Please enter some text
             </Typography>
           </Box>
           <br />
@@ -229,7 +229,7 @@ const Contact = () => {
                 size="2x"
                 className={classes.iconStyle}
               />
-              <Typography style={{ fontSize: "1rem" }}>linkedin</Typography>
+              <Typography style={{ fontSize: "1rem" }}>Linkedin</Typography>
             </Box>
           </IconButton>
 
@@ -241,7 +241,7 @@ const Contact = () => {
                 className={classes.iconStyle}
               />
               <Typography style={{ fontSize: "1rem" }}>
-                github
+                Github
               </Typography>
             </Box>
           </IconButton>

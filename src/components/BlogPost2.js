@@ -69,8 +69,8 @@ class BlogPost2 extends Component{
       <Navbar />
       <Box className={classes.contentArea}>
         <BlogPostTemplate
-          title="fan of cats"
-          subtitle="the story of me and cats"
+          title="Fan of Cats"
+          subtitle="I like cats now"
           date="August 15, 2020"
           image={backgroundImg}
         />

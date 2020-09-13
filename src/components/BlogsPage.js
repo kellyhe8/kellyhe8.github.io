@@ -66,18 +66,18 @@ const Blogs = () => {
         <BlogListEntry
           image={animalImg}
           title='"animal"'
-          subtitle='the picture I found when I searched "animal" on google'
+          subtitle='The picture I found when I searched "animal" on Google'
           bloglink="/blogpost1"
           date="August 15, 2020"
         />
         <BlogListEntry
           image={angryCatImg}
-          title="fan of cats"
-          subtitle="the story of me and cats"
+          title="Fan of Cats"
+          subtitle="I like cats now"
           bloglink="/blogpost2"
           date="August 15, 2020"
         />
-        more coming soon...
+        There may be a routing issue when you click on each post - I'm working on it!
       </Box>
       <Contact />
     </>

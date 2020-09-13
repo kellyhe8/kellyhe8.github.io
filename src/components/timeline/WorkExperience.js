@@ -114,13 +114,13 @@ const useStyles = makeStyles((theme) => ({
   },
   heading: {
     // color: "tomato",
-    padding: "0 0 1rem 0",
-    textTransform: "lowercase",
+    padding: "0 0 2rem 0",
+    // textTransform: "lowercase",
   },
   subheading: {
     // color: "tomato",
     padding: "0 0 3rem 0",
-    textTransform: "lowercase",
+    // textTransform: "lowercase",
   },
 }));
 
@@ -132,15 +132,15 @@ const WorkExperience = () => {
       <Box className={classes.mainContainer} component="header">
         <Box className={classes.contentArea}>
           <Typography className={classes.heading} variant="h4" align="center">
-            software experience
+            Software Experience
           </Typography>
-          <Typography
+          {/* <Typography
             className={classes.subheading}
             variant="h6"
             align="center"
           >
             more in depth descriptions about my work
-          </Typography>
+          </Typography> */}
           <Box className={classes.timeline} component="div">
             <Typography
               className={`${classes.timelineYear} ${classes.timelineItem}`}
@@ -152,7 +152,7 @@ const WorkExperience = () => {
               company="Salesforce"
               role="Software Engineering Intern"
               location="Burlington, MA (remote)"
-              date="June 2020 - Aug 2020"
+              date="Jun 2020 - Aug 2020"
               description="I created a Google Assistant e-commerce application! The project helps showcase the potential of headless commerce
               to deliver shopping experiences on new and innovative platforms. It also enhanced the shopping experience for 
               for people with visual impairments. The architecture behind the project includes using a back end for
@@ -173,7 +173,7 @@ const WorkExperience = () => {
               company="Youth Global Network: Project-C"
               role="Software Engineering Intern"
               location="Sha Tin, Hong Kong"
-              date="June 2019 - Aug 2019"
+              date="Jun 2019 - Aug 2019"
               description="Project-C's mission is to teach underprivileged children coding by providing an easy-to-learn app development 
               platform. During my internship, I analyzed data about the students using this platform. I calculated statistics such as usage time,
               frequency of app components, and tutorial completion time, which could then be relayed to teachers to help
@@ -183,7 +183,7 @@ const WorkExperience = () => {
               company="Hosta Labs"
               role="Software Engineering Extern"
               location="Cambridge, MA"
-              date="Jan 2019 - Feb 2019"
+              date="Jan 2019"
               description="Hosta Labs is creating 3D, interactive models of spaces from 2D images. I externed for about a month and
               I compared the accuracy of their depth perception algorithms to those built-in on newer iPhones. I also worked on the iOS application,
               displaying a mock 3D model in the app."

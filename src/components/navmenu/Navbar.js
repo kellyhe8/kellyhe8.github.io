@@ -76,22 +76,22 @@ const useStyles = makeStyles((theme) => ({
 const menuIcons = [
   {
     listIcon: <Home />,
-    listText: "home",
+    listText: "Home",
     listPath: "/",
   },
   {
     listIcon: <AssignmentInd />,
-    listText: "resume",
+    listText: "Resume",
     listPath: "/resume",
   },
   {
     listIcon: <Book />,
-    listText: "blogs",
+    listText: "Blog",
     listPath: "/blogs",
   },
   {
     listIcon: <ThumbsUpDown />,
-    listText: "recs and faves",
+    listText: "Recs and Faves",
     listPath: "/recsandfaves",
   },
 ];
@@ -115,7 +115,7 @@ const Navbar = () => {
     >
       <Avatar className={classes.avatar} src={favicon} alt="kelly he"></Avatar>
       <Typography variant="h5" align="center" style={{ margin: "1rem" }}>
-        kelly he
+        Kelly He
       </Typography>
       <Divider />
       <List>

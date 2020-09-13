@@ -35,7 +35,7 @@ const useStyles = makeStyles((theme) => ({
     margin: theme.spacing(3),
     width: theme.spacing(20), // different way to set size of avatar pic
     height: theme.spacing(20),
-    border: `.1rem ${theme.palette.accent2.main} solid`,
+    // border: `.1rem ${theme.palette.accent2.main} solid`,
   },
   title: {
     color: theme.palette.primary.dark,
@@ -59,19 +59,20 @@ const Intro = () => {
         <Avatar className={classes.avatar} src={avatar} alt="kelly he" />
       </Grid>
       <Typography className={classes.title} variant="h4">
-        hey i'm <span className={classes.highlight2}>kelly</span>
+        Hey, I'm <span className={classes.highlight2}>Kelly</span>
         {/* <Typed strings={["hey i'm kelly"]} typeSpeed={80}></Typed> */}
       </Typography>
       <Typography className={classes.subtitle} variant="h5">
         <Typed
           strings={[
-            "welcome to my website!",
-            "feel free to give me feedback on the site and contact me in the box below",
-            "this site is built using react and material ui",
-            "you can find the code for this site on my personal github",
-            "this font's question mark is interesting; howdy do??!",
+            "Welcome to my website!",
+            "I'm a college junior studying Electrical Engineering and Computer Science",
+            "Feel free to give me feedback on the site and contact me in the box at the bottom of the page",
+            "I built this using React and Material UI",
+            "You can find the code on my github",
+            "This font's question mark is interesting; howdy do??!",
           ]}
-          typeSpeed={50}
+          typeSpeed={25}
           loop
         ></Typed>
       </Typography>
