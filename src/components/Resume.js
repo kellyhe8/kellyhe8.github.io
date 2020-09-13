@@ -5,6 +5,7 @@ import Contact from "./Contact";
 // import { Page, Text, View, Document, StyleSheet, pdfjs } from "react-pdf";
 // import { Document, Page, pdfjs } from "react-pdf";
 import { Box } from "@material-ui/core";
+import { makeStyles } from "@material-ui/core/styles";
 
 import resume from "../img/websiteresume.jpg";
 
@@ -17,14 +18,39 @@ import resume from "../img/websiteresume.jpg";
 //   section: { color: "white", textAlign: "center", margin: 30 },
 // });
 
+const useStyles = makeStyles((theme) => ({
+  resumeBox: {
+    width:"65%", 
+    margin: "4rem auto 0 auto",
+    [theme.breakpoints.down("xl")]: {
+      width: "55%",
+    },
+    [theme.breakpoints.down("lg")]: {
+      width: "70%",
+    },
+    [theme.breakpoints.down("md")]: {
+      width: "80%",
+    },
+    [theme.breakpoints.down("sm")]: {
+      width: "90%",
+    },
+  },
+  resume: {
+    maxWidth:"100%",
+    
+  }
+}))
+
 const Resume = () => {
   // const [numPages, setNumPages] = useState(null);
   // const [pageNumber, setPageNumber] = useState(1);
+  const classes = useStyles();
+
   return (
     <>
       <Navbar />
-      <Box style={{width:"65%", margin: "4rem auto 0 auto"}}>
-      <img src={resume} style={{maxWidth:"100%"}}/>
+      <Box className={classes.resumeBox}>
+      <img src={resume} className={classes.resume}/>
       </Box>
       
       {/* <Box
