@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "./navmenu/Navbar";
 import Contact from "./Contact";
 import { Typography, Box } from "@material-ui/core";
-import { useTheme } from "@material-ui/core/styles";
+// import { useTheme } from "@material-ui/core/styles";
 import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
@@ -42,7 +42,7 @@ const useStyles = makeStyles((theme) => ({
 
 const RecsFaves = () => {
   const classes = useStyles();
-  const theme = useTheme();
+  // const theme = useTheme();
   return (
     <>
       <Navbar />

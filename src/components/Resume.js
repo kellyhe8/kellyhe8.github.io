@@ -20,7 +20,7 @@ import resume from "../img/websiteresume.jpg";
 
 const useStyles = makeStyles((theme) => ({
   resumeBox: {
-    width:"65%", 
+    width: "65%",
     margin: "4rem auto 0 auto",
     [theme.breakpoints.down("xl")]: {
       width: "55%",
@@ -36,10 +36,9 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   resume: {
-    maxWidth:"100%",
-    
-  }
-}))
+    maxWidth: "100%",
+  },
+}));
 
 const Resume = () => {
   // const [numPages, setNumPages] = useState(null);
@@ -50,9 +49,9 @@ const Resume = () => {
     <>
       <Navbar />
       <Box className={classes.resumeBox}>
-      <img src={resume} className={classes.resume}/>
+        <img src={resume} alt="Resume" className={classes.resume} />
       </Box>
-      
+
       {/* <Box
         style={{
           width: "34.5%",

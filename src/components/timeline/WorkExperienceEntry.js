@@ -51,7 +51,7 @@ const styles = (theme) => ({
     // color: "white",
     lineheight: 1,
     padding: "0.5rem 1rem", // 0.5rem 0 1rem
-    borderRadius: "1.2rem",
+    // borderRadius: "1.2rem",
     "&:before": {
       display: "none",
     },

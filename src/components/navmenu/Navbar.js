@@ -38,6 +38,7 @@ const useStyles = makeStyles((theme) => ({
     margin: "1rem auto",
     width: theme.spacing(15), // different way to set size of avatar pic
     height: theme.spacing(15),
+    // borderRadius: "0.5rem",
     // border: `.1rem ${theme.palette.accent2.main} solid`,
   },
   menuItem: {
@@ -113,7 +114,7 @@ const Navbar = () => {
       component="div"
       onClick={toggleSlider(slider, false)}
     >
-      <Avatar className={classes.avatar} src={favicon} alt="kelly he"></Avatar>
+      <img className={classes.avatar} src={favicon} alt=""></img>
       <Typography variant="h5" align="center" style={{ margin: "1rem" }}>
         Kelly He
       </Typography>

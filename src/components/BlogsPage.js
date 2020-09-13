@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "./navmenu/Navbar";
 import Contact from "./Contact";
 import { Typography, Box } from "@material-ui/core";
-import { useTheme } from "@material-ui/core/styles";
+// import { useTheme } from "@material-ui/core/styles";
 import { makeStyles } from "@material-ui/core/styles";
 import BlogListEntry from "./BlogPosts/BlogListEntry";
 import animalImg from "../img/animal.jpg";
@@ -33,7 +33,6 @@ const useStyles = makeStyles((theme) => ({
 
 const Blogs = () => {
   const classes = useStyles();
-  const theme = useTheme();
   return (
     <>
       <Navbar />
@@ -49,7 +48,7 @@ const Blogs = () => {
             borderBottom: `1px white solid`,
           }}
         >
-          Blogs
+          My Blog
         </Typography>
         {/* <Typography
           variant="h2"
@@ -64,20 +63,20 @@ const Blogs = () => {
           attempting to write
         </Typography> */}
         <BlogListEntry
-          image={animalImg}
-          title='"animal"'
-          subtitle='The picture I found when I searched "animal" on Google'
-          bloglink="/blogpost1"
-          date="August 15, 2020"
-        />
-        <BlogListEntry
           image={angryCatImg}
           title="Fan of Cats"
           subtitle="I like cats now"
           bloglink="/blogpost2"
-          date="August 15, 2020"
+          date="August 15, 2020 - 11:58 PM"
         />
-        There's a routing issue when you click on a blog post - I'm working on it!
+        <BlogListEntry
+          image={animalImg}
+          title='"animal"'
+          subtitle='The picture I found when I searched "animal" on Google'
+          bloglink="/blogpost1"
+          date="August 15, 2020 - 10:32 PM"
+        />
+        More coming soon!
       </Box>
       <Contact />
     </>

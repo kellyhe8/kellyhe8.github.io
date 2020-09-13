@@ -90,13 +90,13 @@ const useStyles = makeStyles((theme) => ({
   timelineYear: {
     textAlign: "center",
     maxWidth: "6.5rem",
-    margin: "0 2rem 0 auto",
+    margin: "1rem 2rem 0 auto",
     fontSize: "1.5rem",
     background: theme.palette.accent1.main,
     // color: "white",
     lineheight: 1,
     padding: "0.5rem 1rem", // 0.5rem 0 1rem
-    borderRadius: "1.2rem",
+    // borderRadius: "1.2rem",
     "&:before": {
       display: "none",
     },
@@ -114,7 +114,7 @@ const useStyles = makeStyles((theme) => ({
   },
   heading: {
     // color: "tomato",
-    padding: "0 0 2rem 0",
+    padding: "0 0 1rem 0",
     // textTransform: "lowercase",
   },
   subheading: {

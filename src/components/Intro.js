@@ -35,6 +35,7 @@ const useStyles = makeStyles((theme) => ({
     margin: theme.spacing(3),
     width: theme.spacing(20), // different way to set size of avatar pic
     height: theme.spacing(20),
+    // borderRadius: "0.5rem",
     // border: `.1rem ${theme.palette.accent2.main} solid`,
   },
   title: {

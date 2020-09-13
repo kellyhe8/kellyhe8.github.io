@@ -2,7 +2,8 @@ import React from "react";
 import { useTheme } from "@material-ui/core/styles";
 import { withStyles } from "@material-ui/core/styles";
 
-import { Box, Typography, Avatar, Link, Divider } from "@material-ui/core";
+import { Box, Typography, Divider, Link as MUILink } from "@material-ui/core";
+import { Link } from "react-router-dom";
 
 const styles = (theme) => ({
   avatarBox: {
@@ -22,7 +23,8 @@ const styles = (theme) => ({
     minWidth: "40px",
     // border: `.1rem ${theme.palette.accent1.main} solid`,
     margin: "auto",
-    variant: "circle",
+    // borderRadius: ".5rem",
+    // variant: "square",
   },
   wordBox: {
     flexBasis: "80%",
@@ -54,15 +56,25 @@ const BlogListEntry = (props) => {
           }}
         >
           <Box className={classes.avatarBox}>
-            <Avatar
-              alt="blog picture"
-              src={props.image}
-              className={classes.avatarPic}
-            ></Avatar>
+            <Link
+              to={props.bloglink}
+              style={{ color: "white", textDecoration: "none" }}
+            >
+              <img
+                alt="blog"
+                src={props.image}
+                className={classes.avatarPic}
+              ></img>
+            </Link>
           </Box>
           <Box className={classes.wordBox}>
-            <Link href={props.bloglink} variant="h6" style={{ color: "white" }}>
-              {props.title}
+            <Link
+              to={props.bloglink}
+              style={{ color: "white", textDecoration: "none" }}
+            >
+              <MUILink variant="h6" style={{ color: "white" }}>
+                {props.title}
+              </MUILink>
             </Link>
             <Typography
               variant="body1"

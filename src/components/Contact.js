@@ -31,7 +31,7 @@ const useStyles = makeStyles((theme) => ({
     // border: "2px white solid",
     padding: "2rem 2rem 3rem",
     margin: "0 0 3rem 0",
-    borderRadius: ".5rem",
+    // borderRadius: ".5rem",
 
     width: "50%",
     [theme.breakpoints.down("xl")]: {
@@ -61,7 +61,7 @@ const useStyles = makeStyles((theme) => ({
     textTransform: "capitalize",
     background: theme.palette.accent2.main,
     color: "white",
-    borderRadius: ".3rem",
+    // borderRadius: ".3rem",
     border: "none",
   },
   heading: {
@@ -69,7 +69,7 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
     // textTransform: "uppercase",
     margin: "0 0 1rem 0",
-    padding: "1rem 0 0 0"
+    padding: "1rem 0 0 0",
   },
   socialContainer: {
     display: "flex",
@@ -167,7 +167,7 @@ const Contact = () => {
             <Button
               variant="contained"
               className={classes.button}
-              endIcon={<Arrow/>}
+              endIcon={<Arrow />}
               onClick={() => {
                 const submittedText = document.getElementById(
                   "submittedNotification"
@@ -199,7 +199,7 @@ const Contact = () => {
                 display: "none",
               }}
             >
-              Submitted - Thanks! 
+              Submitted - Thanks!
             </Typography>
             <Typography
               id="errorNotification"
@@ -240,9 +240,7 @@ const Contact = () => {
                 size="2x"
                 className={classes.iconStyle}
               />
-              <Typography style={{ fontSize: "1rem" }}>
-                Github
-              </Typography>
+              <Typography style={{ fontSize: "1rem" }}>Github</Typography>
             </Box>
           </IconButton>
           {/* <IconButton href="https://github.com/kellyhesf" target="_blank">
