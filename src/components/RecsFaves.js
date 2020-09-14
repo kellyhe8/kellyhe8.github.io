@@ -48,7 +48,7 @@ const RecsFaves = () => {
       <Navbar />
       <Box className={classes.middleContainer}>
         <Typography variant="h1" className={classes.headingText}>
-          recommendations and favorites
+          Recommendations and Favorites
         </Typography>
         {/* <Typography
           variant="h2"
@@ -76,7 +76,7 @@ const RecsFaves = () => {
           bloglink="blogpost2"
           date="August 15, 2020"
         /> */}
-        coming soon...
+        Coming soon...
       </Box>
       <Contact />
     </>
