@@ -7,7 +7,7 @@ import Contact from "./Contact";
 import { Box } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 
-import resume from "../img/websiteresume.jpg";
+import resume from "../img/websiteresume.png";
 
 // pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
