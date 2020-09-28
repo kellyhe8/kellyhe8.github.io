@@ -149,6 +149,17 @@ const WorkExperience = () => {
               2020
             </Typography>
             <WorkExperienceEntry
+              company="Cogo Labs"
+              role="Software Engineering Intern"
+              location="Cambridge, MA"
+              date="Sep 2020 - Dec 2020"
+              description="I'm currently working at Cogo Labs, whose mission is to launch and accelerate internet companies with our data, tech and analytics!
+              I'm working on a project with 3 other interns to identify viable public companies that have potential to 
+              excel from stagnation. I'll be working with SQL databases, Python, and machine learning models in order to 
+              generate the desired results."
+              
+            />
+            <WorkExperienceEntry
               company="Salesforce"
               role="Software Engineering Intern"
               location="Burlington, MA (remote)"
@@ -172,7 +183,7 @@ const WorkExperience = () => {
             <WorkExperienceEntry
               company="Youth Global Network: Project-C"
               role="Software Engineering Intern"
-              location="Sha Tin, Hong Kong"
+              location="Sha Tin, Hong Kong" 
               date="Jun 2019 - Aug 2019"
               description="Project-C's mission is to teach underprivileged children coding by providing an easy-to-learn app development 
               platform. During my internship, I analyzed data about the students using this platform. I calculated statistics such as usage time,

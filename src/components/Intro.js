@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
     // width: "100%",
     height: "700px",
-    background: `url(${backgroundImg}) no-repeat center center`,
+    background: `url(${backgroundImg}) repeat center center`,
     zIndex: 1, // specifies stack order
     // border: "2px white solid",
     borderBottom: `3px ${theme.palette.primary.light} solid`,

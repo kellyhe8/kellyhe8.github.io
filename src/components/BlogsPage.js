@@ -7,6 +7,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import BlogListEntry from "./BlogPosts/BlogListEntry";
 import animalImg from "../img/animal.jpg";
 import angryCatImg from "../img/angrycat.jpg";
+import mitpurell from "../img/mitpurell.jpg";
 
 const useStyles = makeStyles((theme) => ({
   middleContainer: {
@@ -48,7 +49,7 @@ const Blogs = () => {
             borderBottom: `1px white solid`,
           }}
         >
-          My Blog
+          Blog
         </Typography>
         {/* <Typography
           variant="h2"
@@ -62,6 +63,14 @@ const Blogs = () => {
         >
           attempting to write
         </Typography> */}
+
+        <BlogListEntry
+          image={mitpurell}
+          title="Ahhh"
+          subtitle="My fall 2020 Plans"
+          bloglink="/blogpost3"
+          date="September 27, 2020 - 10:47 PM"
+        />
         <BlogListEntry
           image={angryCatImg}
           title="Fan of Cats"
