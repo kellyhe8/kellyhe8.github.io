@@ -47,58 +47,64 @@ class BlogPost1 extends Component {
         <Navbar />
         <Box className={classes.contentArea}>
           <BlogPostTemplate
-            title='Ahhh'
-            subtitle='My fall 2020 plans'
+            title='Making Decisions'
+            subtitle='Fall 2020'
             date="September 27, 2020 - 10:47 PM"
             image={backgroundImg}
           />
-
-          <Typography variant="body1" className={classes.paragraphContent}>
-            <Typography variant="h5" className={classes.paragraphTitle}>
+          <Typography variant="h5" className={classes.paragraphTitle}>
             The Week of July 7th
           </Typography>
-            So now that it's the end of September and I'm a month into the fall semester, 
-            I think I can reflect on my choices from about 2 months ago (though I still 
-            have more decisions to make now, but we'll get to that).
+          <Typography variant="body1" className={classes.paragraphContent}>
+            
+            So now that it's the end of September, I can reflect on my 
+            choices from 2 months ago about what to do this fall, though
+            I now have to make decisions about the long run future 
+            <span role="img" aria-label="thinking emoji"> 😬</span>.
             <br/>
             <br/>
-            From the time we got kicked off campus through July 7th, we were given
+            From March 11th, when we got kicked off campus, to July 7th, we were given
             countless surveys from administration about what we wanted our fall semester
             at MIT to look like, which I acually really appreciated. Though I know schools
-            are ultimately a business, I think MIT admin care more about their students than
-            maybe some other schools that I've heard about... (no shade; just from hearsay). 
-            From these surveys, my friends and I gathered that our class, the Juniors of 2022,
-            would most likely be allowed back on campus, and I was super naive. As the covid
-            cases went up, I just kept thinking, "well yea but Northeastern and BU are allowing
-            people back, so I'll be allowed back too."
+            are ultimately a business, I think MIT admin really tried to take into account
+            students wants while considering the obvious health concerns. 
+            From these surveys, my friends and I were under the impression that the Juniors of 2022,
+            would most likely be allowed back on campus, and everything would be great
+            (super naive, I know, but maybe just in denial). As the covid
+            cases went up, I just kept thinking, "well yeah, but Northeastern and BU are allowing
+            people back, so I'll be allowed back too, and it'll be great."
             <br/>
             <br/>
-            Then, the week of July 7th came around and the incomplete covid plan website was leaked.
-            It was supposed to be released the next morning, but people got a hold of it prematurely
-            and it spread like wildfire. I was pretty numb though; getting kicked off campus back in
-            March scarred me, and I refuse to let covid hurt me more😤. Anyway, the plan stated that
-            only seniors who are living on campus will have the possibility of in person classes,
-            though most will be online anyway, plus a few extreme exceptions. At this point, I was in
-            the middle of my Salesforce internship and I felt disconnected. The past 2 years at MIT
-            were the most fun and educational years of my life. I met the coolest people and learned 
-            so much, not from classes, but from other people and physical interactions and conversations.
+            Then, the week of July 7th came around, the incomplete covid plan website was leaked.
+            Only seniors were allowed back, and everything was virtual. Looking back now, this was
+            definitely the right call in terms of safety, but it was tragic for all the students
+            like me who feel that being on campus with the MIT community is the majority
+            of the learning experience. Classes and learning just aren't the same without that aspect.
+            I was pretty numb though after hearing the news; getting kicked off campus back in
+            March scarred me, and I refused to let covid hurt me more 
+            <span role="img" aria-label="smoke nose emoji"> 😤</span>. 
+            <br/>
+            <br/>
+            At this point, I was in the middle of my Salesforce internship and I felt lost and disconnected. 
             I didn't want an entire eighth of the best years of my life to be taken away from me.
+            So what do I do? Take a gap semester and graduate in Dec 2020 instead? What would I do in
+            the gap semester? Work? Personal projects? ~Startup~?
             <br/>
             <br/>
-            Initially, I was going to take an entire gap semester (or year) and push back my graduation,
-            and then I was going to try to recruit for a fall internship. Recruiting for fall plus working
-            at Salesforce was really strange because I hadn't even been halfway through my current internship,
-            but I already had to recruit again. It was rough. Absolutely no company replied to me if I applied
-            online because demand for software internships was high, but supply was very low. After all, 
-            we are still in a pandemic.
+            From all the LinkedIn and Facebook groups, I knew I wasn't the only one in this position.
+            So many people wanted to now find fall internships because they also didn't want to 
+            sign up for Zoom University, which meant that it was going to be pretty difficult to get
+            any company to respond to online applications.
+            Recruiting for fall plus working at Salesforce was also really strange because I hadn't 
+            even been halfway through my internship and I was already looking for another job.
             <br/>
             <br/>
-            Fast forward a bit, I end up finding this cool opportunity at Cogo Labs, where I can work with
-            other MIT students on a machine learning project, a field I'd never had any applicable experience
-            with. It sounded really awesome (and still does), and I had to take at least one class at MIT 
-            in order to work there, because it was a joint program that MIT and Cogo were putting together.
+            Fast forward a bit, I end up finding this really cool opportunity at Cogo Labs, where I would work with
+            other MIT students on a machine learning and big data project (oOoOh hot *buzz* words), 
+            while taking at least one class. It was an internship that Cogo put together with MIT to help 
+            make up for some of the interaction lost with virtual learning. 
             The internship started on September 8, and now that I'm 3 weeks in, I want to do a brief reflection
-            and see what I want to do in the future. Also as a side node, I already have to recruit again for
+            and think what I want to do in the future. Also as a side node, I already have to recruit again for
             Summer 2021. I feel like I've been filling out applications for years on end.
           </Typography>
 
@@ -106,30 +112,31 @@ class BlogPost1 extends Component {
             Reflection and Future Plans
           </Typography>
           <Typography variant="body1" className={classes.paragraphContent}>
-            I want to start by saying that I don't really have regrets, and I think I made a really 
-            great choice. I'm learning a lot at Cogo, meeting great people, and taking part time student status is actually
+            I'm learning a lot at Cogo, meeting great people, and taking part time student status is actually
             really nice; I'm used to taking a lot of classes at once, but I can now focus more deeply
-            on less classes rather than spread myself thin. However, I also feel like I'm working 
-            a lot. I'm taking two classes, though I originally wanted to take only one. I signed up for 
+            on less classes rather than spread myself thin. However, I also feel like I'm constantly working. 
+            I'm taking two classes, though I originally wanted to take only one. I signed up for 
             two because I wasn't sure which one I wanted to take, and I wanted to figure it out then drop,
-            since MIT has a very generous drop policy. The reason for this is because I planned to take a
-            gap semester and graduate late anyway - I want my full 8 semesters as an MIT undergraduate student
-            because I love it here. 
+            since MIT has a very generous drop policy. 
             <br />
             <br />
-            However, I'm also torn because I can potentially still graduate in May 2022, and so why would
-            I not? One part of me is saying to just graduate "on time" and work or get a Master's or move on,
-            and there will be great opportunities wherever I go. The other part of me thinks that being an
-            undergraduate at MIT is my favorite thing in the world. I learn so much here, and the community 
-            is so amazing and unique, and so I would really want to graduate a semester later, and work will
-            always be out there, but college, especially undergrad, is only now.
+            Because I'm taking part time student status, it's very feasible for me to still graduate in May 2022,
+            which is where I'm starting to get confused about what to do. One part of me says, why would I stay 
+            in school longer than I need to? Most people jump at the oopportunity to graduate early. But the 
+            other part of me says that MIT provides an experience that you just can't get many other places, if at all.
+            The community is so supportive, driven, passionate, and smart. But then again - maybe industry work 
+            will be just as great at the right copmany; I don't exactly know everything that's out there, and the
+            only way to find out would be to experience it myself. I guess my main debate is whether
+            I want to graduate later because I think undergrad is a *once--in--a--lifetime* experience, 
+            or whether that would be a "waste of time" and work or higher education and whatnot would
+            be better.
             <br />
             <br />
-            But yeah. I'm pretty confused. The choices are: graduate May 2022 as planned then work, or graduate Dec 2022.
-            Also throw in a possible M-Eng in there, possibly after or maybe after a break. From sage advice
-            I've received, I think in the grand scheme of things, these few months ultimately really don't matter
-            at all. I just don't even know what to put on job / internship applications now when they ask for 
-            graduation date.
+            I think that in the grand scheme of things, these few months difference really won't matter
+            at all, but it's still a decision I need to make. As for short term consequences,
+            I don't know what to put in the "Graduation Date" field of job applications anymore.
+            Also am I still a '22? Do I still hold the privilege of wearing the 2022 brass rat 
+            <span role="img" aria-label="thinking emoji"> 🤔</span>?
             <br />
             <br />
           </Typography>
@@ -138,6 +145,13 @@ class BlogPost1 extends Component {
             Cheerio, <br />
             Kelly
           </Typography>
+
+          <Typography variant="body1" className={classes.paragraphContent}>
+            <br />
+            <br />
+            P.S. I apologize for using so many emojis <span role="img" aria-label="pleading emoji">🥺</span>
+          </Typography>
+
         </Box>
         <Contact />
       </>

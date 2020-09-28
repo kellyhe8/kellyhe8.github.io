@@ -2,7 +2,7 @@ import React from "react"; // rafce is shortcut
 import { Typography, Avatar, Grid, Box } from "@material-ui/core";
 import Typed from "react-typed";
 import { makeStyles } from "@material-ui/core/styles";
-import avatar from "../img/me.jpg";
+import avatar from "../img/me2.jpg";
 import backgroundImg from "../img/background1.png";
 
 // CSS STYLES

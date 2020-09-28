@@ -66,8 +66,8 @@ const Blogs = () => {
 
         <BlogListEntry
           image={mitpurell}
-          title="Ahhh"
-          subtitle="My fall 2020 Plans"
+          title="Making Decisions"
+          subtitle="Fall 2020"
           bloglink="/blogpost3"
           date="September 27, 2020 - 10:47 PM"
         />
