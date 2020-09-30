@@ -155,8 +155,8 @@ const WorkExperience = () => {
               date="Sep 2020 - Dec 2020"
               description="I'm currently working at Cogo Labs, whose mission is to launch and accelerate internet companies with our data, tech and analytics!
               I'm working on a project with 3 other interns to identify viable public companies that have potential to 
-              excel from stagnation. I'll be working with SQL databases, Python, and machine learning models in order to 
-              generate the desired results."
+              excel from stagnation. We're currently figuring out how to isolate unsuccessful and successful
+              traits and create a machine learning model, working with SQL databases and Python to do so."
               
             />
             <WorkExperienceEntry
@@ -166,8 +166,8 @@ const WorkExperience = () => {
               date="Jun 2020 - Aug 2020"
               description="I created a Google Assistant e-commerce application! The project helps showcase the potential of headless commerce
               to deliver shopping experiences on new and innovative platforms. It also enhanced the shopping experience for 
-              for people with visual impairments. The architecture behind the project includes using a back end for
-              front end (BFF) pattern, whose function was to resolve data from the commerce SDK and create a GraphQL API. 
+              for people with visual impairments. I set a precedence for modular front end devlopment by utilizing the 
+              back end for front end (BFF) pattern. The BFF's function was to resolve data from the commerce SDK and create a GraphQL API. 
               This API was also used by two other team members, and we worked together to integrate the necessary functionalities
               for their projects, which was displaying product comparisons and product details page. I then used Dialogflow, which handles the natural 
               language processing and intent-matching, to integrate google assistant to the BFF.
@@ -186,18 +186,20 @@ const WorkExperience = () => {
               location="Sha Tin, Hong Kong" 
               date="Jun 2019 - Aug 2019"
               description="Project-C's mission is to teach underprivileged children coding by providing an easy-to-learn app development 
-              platform. During my internship, I analyzed data about the students using this platform. I calculated statistics such as usage time,
-              frequency of app components, and tutorial completion time, which could then be relayed to teachers to help
-              them give tailored guidance to their students."
+              platform. During my internship, I analyzed data about the students using this platform, and 
+              I calculated statistics that would be meaningful to teachers such as usage time,
+              frequency of app components, and tutorial completion time. Near the end, I began creating teacher
+              reports pages to provide a portal for them to see and best utilize these results."
             />
             <WorkExperienceEntry
               company="Hosta Labs"
               role="Software Engineering Extern"
               location="Cambridge, MA"
               date="Jan 2019"
-              description="Hosta Labs is creating 3D, interactive models of spaces from 2D images. I externed for about a month and
-              I compared the accuracy of their depth perception algorithms to those built-in on newer iPhones. I also worked on the iOS application,
-              displaying a mock 3D model in the app."
+              description="Hosta Labs is creating 3D, interactive models of spaces from 2D images. During my month as an extern,
+              I compared the accuracy of their depth perception algorithms to those built-in on newer iPhones. 
+              I also worked on the iOS application, displaying a mock 3D model in the app, which provided a proof
+              of concept for the generated models to go."
             />
           </Box>
         </Box>
