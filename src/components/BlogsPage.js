@@ -8,6 +8,7 @@ import BlogListEntry from "./BlogPosts/BlogListEntry";
 import animalImg from "../img/animal.jpg";
 import angryCatImg from "../img/angrycat.jpg";
 import mitpurell from "../img/mitpurell.jpg";
+import chapstick from "../img/chapstick.png";
 
 const useStyles = makeStyles((theme) => ({
   middleContainer: {
@@ -63,7 +64,13 @@ const Blogs = () => {
         >
           attempting to write
         </Typography> */}
-
+        <BlogListEntry
+          image={chapstick}
+          title="This Chapstick"
+          subtitle="Get this chapstick"
+          bloglink="/blogpost4"
+          date="October 1, 2020 - 3:28 AM"
+        />
         <BlogListEntry
           image={mitpurell}
           title="Making Decisions"

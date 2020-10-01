@@ -22,7 +22,7 @@ const BlogPostTemplate = (props) => {
     <>
       <Box
         className={classes.header}
-        style={{ background: `url(${props.image}) repeat center center` }}
+        style={{ background: `url(${props.image}) no-repeat center center` }}
       >
         <Typography variant="h2">{props.title}</Typography>
         <Typography variant="h5">{props.subtitle}</Typography>

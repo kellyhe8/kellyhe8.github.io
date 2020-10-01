@@ -3,8 +3,9 @@ import Navbar from "../navmenu/Navbar";
 import Contact from "../Contact";
 import { withStyles } from "@material-ui/core/styles";
 import BlogPostTemplate from "./BlogPostTemplate";
-import backgroundImg from "../../img/animal.jpg";
-import { Typography, Box } from "@material-ui/core";
+import backgroundImg from "../../img/chapstick.png";
+import { Typography, Box, Link } from "@material-ui/core";
+// import { useTheme } from "@material-ui/core/styles";
 
 const styles = (theme) => ({
   contentArea: {
@@ -36,76 +37,80 @@ const styles = (theme) => ({
     // textAlign: "right",
     margin: "0 5rem 0 0",
   },
+  listLink: {
+    color: theme.palette.accent1.main
+  }
 });
 
 class BlogPost1 extends Component {
   render() {
     const { classes } = this.props;
+    // const theme = useTheme();
 
     return (
       <>
         <Navbar />
         <Box className={classes.contentArea}>
           <BlogPostTemplate
-            title='"animal"'
-            subtitle='A picture I found when I searched "animal" on Google'
-            date="August 15, 2020 - 10:32 PM"
+            title='This Chapstick'
+            subtitle='Get this chapstick'
+            date="October 1, 2020 - 3:28 AM"
             image={backgroundImg}
           />
           <Typography variant="h5" className={classes.paragraphTitle}>
-            Why I Googled "animal"
+            Badger Tea Tree & Lemon Lip Balm, <br />Herbal Lip Care, Soothing Relief for Lips
           </Typography>
           <Typography variant="body1" className={classes.paragraphContent}>
-            The most momentous occasion of my life just happened. Before I tell
-            you the story of googling the word "animal", let me give you some
-            backstory.
+            I got this chapstick at Wegman's (I always get Wegman's And
+            Whole Foods mixed up because they have the same vibe, but I'm pretty sure it was Wegman's). 
+            So my chapstick routine
+            is: <br />
+            <Box style={{margin:"1rem 0 1rem 4rem"}}>1. Put on a thick-ish layer of chapstick before I sleep <br />
+            2. Wake up </Box>
+            Even though it's a very complicated routine, I've been 
+            doing it for years so I'm pretty good at it now. I've tried 
+            a lot of different types and brands of chapsticks
+            including EOS, the original ChapStick brand,
+            Vaseline, Burt's Bees, Blistex, Sugar, Neutrogena, random ones I got for free, 
+            etc. - and those are just off the top of my head at 4am. From my extensive experience, 
+            I definitely know
+            the qualities I don't like in chapsticks; there are some that leave a weird
+            film on the inner lip part when you wake up and it's not great, and
+            some others seem to disappear or dry really quickly and don't do anything for moisturization.
+            Of the ones I listed, I definitely liked Blistex and Burt's Bees the most; Blistex 
+            is super shiny when applied though, and you use your finger rather than a tube 
+            directly on your lips. Burt's Bees is really matte, but it sometimes leaves the 
+            film, and one time, the formula got really dry and hard to glide (it only happened with 
+            one of them, and I've bought the Burt's Bees one at least 4 times).
             <br />
             <br />
-            I decided I wanted to make a website to try out web development
-            more. I debated long and hard about what type of site to build, and
-            I finally decided to make a personal portfolio and blog. After I
-            started developing, I realized I wanted to have pictures for the
-            blog and just other parts of the site. I needed pictures that went
-            with my content, and since I didn't have any blog content, I needed
-            to get myself some mock/filler pictures. But do I get random
-            pictures? Do I get pictures from my camera roll of myself? Do I
-            google images? What term would I google? It's pretty hard to find
-            "random" pictures when you have to think about how to get a random
-            picture. It felt weird using pictures of myself because then I'd
-            have to stare at my face for hours. Torn about what to do, I
-            scrolled through my camera roll and came across my cat album.
+            The perfect chapstick would be one that never leaves the film (it kind of
+            feels like excessive lip skin peeling off; it's terrible), one
+            that actually makes my lips feel naturally hydrated, and have it feel like
+            I'm not wearing anything at all on my lips when I wake up, and 
+            one that has that cooling feeling (controversial, I know).
+            THIS ONE DOES ALL OF THAT. It's herbal smelling for sure, dare I say medicinal,
+            and definitely not 
+            fruity or one of those smells that makes you want to eat it. 
+            I personally really like the herbal and tea tree oil feel.
+            It's also not minty, but it gives that cooling sensation that mint flavored
+            chapsticks also have because of the tea tree oil. 
             <br />
             <br />
-            Ever since march, I've really liked looking at cats on the internet
-            because they're derpy and always behave questionably. I then made
-            the genius connection that cats are animals. Naturally, my mind went
-            to searching for animal pictures to use as the filler pictures. This
-            was the most amazing idea of my lifetime. No one has ever used
-            animal pictures before. Ever. So, I googled the word "animal". After
-            just two scrolling motions of my pointer finger, I hit the jackpot,
-            AKA the heading picture.
-          </Typography>
+            But yeah, if any of you guys are in the market for a new chapstick, she's is the one. 
+            I did a quick google search and found it on the 
+            <Link 
+              href = "https://www.badgerbalm.com/p-569-herbal-lip-care-with-tea-tree-and-lemon-balm.aspx?gclid=CjwKCAjw_NX7BRA1EiwA2dpg0pew8TYQ9MujeEojGyoGAZcRFyGTNXbDsEx4XjEOf50pcT1jRIfPbRoCzuMQAvD_BwE"
+              variant = "body1"
+              className={classes.listLink}
+            > official online site </Link> or on 
+            <Link 
+              href="https://www.amazon.com/BADGER-Tree-Lemon-Balm-Ounce/dp/B00VDFKO16"
+              variant="body1"
+              className={classes.listLink}
+            > Amazon </Link>, or you can check Wegman's like I did.
+            If you actually do try it or have tried it, let me know what you think in the contact box below!
 
-          <Typography variant="h5" className={classes.paragraphTitle}>
-            The Aftermath
-          </Typography>
-          <Typography variant="body1" className={classes.paragraphContent}>
-            After finding the photo, I went back to making my site. I know what
-            you're thinking, and yea, what a thriller this is. I actually think
-            I missed telling you guys a few steps. I right clicked the photo,
-            clicked "Save Image", chose a directory, hit "confirm", and bam!
-            When it was finally time to use this picture for the blog page, I
-            realized that I now needed some filler text for the body of the blog
-            as well. Lorem Ipsum? Nah, too basic. Too easy. And thus this blog
-            came to life.
-            <br />
-            <br />
-            Thanks for reading. I'll definitely update you all if there's more
-            followup. I know you all are on the edge of your seats waiting for
-            the next blog post. I'd also definitely love to hear your thoughts
-            on my experience so feel free to contact me in the text box below.
-            <br />
-            <br />
           </Typography>
 
           <Typography variant="h6" className={classes.signature}>
