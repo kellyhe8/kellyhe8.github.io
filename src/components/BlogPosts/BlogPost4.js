@@ -85,16 +85,18 @@ class BlogPost1 extends Component {
             <br />
             <br />
             The perfect chapstick would be one that never leaves the film (it kind of
-            feels like excessive lip skin peeling off; it's terrible), one
-            that actually makes my lips feel naturally hydrated, and have it feel like
-            I'm not wearing anything at all on my lips when I wake up, and 
-            one that has that cooling feeling (controversial, I know).
-            THIS ONE DOES ALL OF THAT. It's herbal smelling for sure, dare I say medicinal,
+            feels like excessive lip skin peeling off; it's terrible), actually makes my lips feel naturally hydrated, 
+            feels like
+            it absorbed into my lips with no residue in the morning,
+            and has that cooling feeling (controversial, I know).
+            THIS BADGER ONE DOES IT ALL! It's herbal smelling for sure, dare I say medicinal,
             and definitely not 
             fruity or one of those smells that makes you want to eat it. 
             I personally really like the herbal and tea tree oil feel.
             It's also not minty, but it gives that cooling sensation that mint flavored
-            chapsticks also have because of the tea tree oil. 
+            chapsticks also have because of the tea tree oil. It's also the perfect balance
+            between a matte and shiny finish. That property doesn't have as much weight as the ones
+            I listed earlier, but it's definitely a plus.
             <br />
             <br />
             But yeah, if any of you guys are in the market for a new chapstick, she's is the one. 
