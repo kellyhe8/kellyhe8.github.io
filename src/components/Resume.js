@@ -4,10 +4,12 @@ import WorkExperience from "./timeline/WorkExperience";
 import Contact from "./Contact";
 // import { Page, Text, View, Document, StyleSheet, pdfjs } from "react-pdf";
 // import { Document, Page, pdfjs } from "react-pdf";
-import { Box } from "@material-ui/core";
+import { Box, Button } from "@material-ui/core";
+import GetAppIcon from '@material-ui/icons/GetApp';
 import { makeStyles } from "@material-ui/core/styles";
 
 import resume from "../img/websiteresume.png";
+import resumepdf from "../img/Kelly_He_Resume.pdf"
 
 // pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
@@ -49,6 +51,11 @@ const Resume = () => {
     <>
       <Navbar />
       <Box className={classes.resumeBox}>
+        <Box style={{textAlign: "right"}}>
+          <Button href={resumepdf}>
+          <GetAppIcon/>Open Full Resume PDF
+          </Button>
+        </Box>
         <img src={resume} alt="Resume" className={classes.resume} />
       </Box>
 

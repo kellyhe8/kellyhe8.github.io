@@ -71,13 +71,13 @@ const Blogs = () => {
           bloglink="/blogpost4"
           date="October 1, 2020 - 3:28 AM"
         />
-        <BlogListEntry
+        {/* <BlogListEntry
           image={mitpurell}
           title="Making Decisions"
           subtitle="Fall 2020"
           bloglink="/blogpost3"
           date="September 27, 2020 - 10:47 PM"
-        />
+        /> */}
         <BlogListEntry
           image={angryCatImg}
           title="Fan of Cats"
