@@ -81,14 +81,14 @@ class BlogPost2 extends Component {
             4/1/20 22:18:36.
             <br /> <br />
             I've never really been a huge animal person. Don't get me wrong, I
-            think animals are cool and all, but I never really had pets growing
-            up, meaning I've never had the pet bond with any animal before, and
-            so animals didn't cross my mind as much. Around March, I just
-            started really liking cats all of a sudden. I really don't know why.
+            think animals are cool and all, but I was never one of those die-hard 
+            horse or dog girls. Maybe it had to do with the fact that 
+            I didn't have pets growing up, but anyway, around March, I realized that I 
+            really like cats, especially chonky ones.
             It'd probably been building up for a few months prior - I think it
-            could've had something to do with the fact that I went to Italy in
-            January and stayed with a family who had 3 really soft and cute
-            cats. But anyway, then when we got kicked off campus and had to
+            could've had something to do with the fact that the family I stayed with 
+            in Italy for a month had 3 really soft and cute
+            cats. But anyway, then when we got kicked off campus for ~corona~ and had to
             quarantine for 5 months (and counting. it's actually been exactly 5
             months today! 😮), and so I guess I'm now like a cat lady without
             any cats. An internet cat lady. An e-cat lady.
@@ -124,11 +124,10 @@ class BlogPost2 extends Component {
                 </Link>
                 <Typography variant="body1" className={classes.listBody}>
                   This one just showed up on my feed one day and it has some
-                  pretty quality content, emphasis on the some. The content is
-                  super varied, which is good, but that means some videos are
+                  pretty quality content, emphasis on "some". The content is
+                  super varied which is nice, but that means some videos are
                   bad and some are good. What exactly defines a good cat video
-                  vs. a bad vat video? Well that's a topic for another blog
-                  post.
+                  vs. a bad cat video? That's just a sense you have to be born with.
                 </Typography>
               </ListItem>
               <ListItem divider className={classes.linktable}>
@@ -141,9 +140,9 @@ class BlogPost2 extends Component {
                 </Link>
                 <Typography variant="body1" className={classes.listBody}>
                   I just looked up "cats" on instagram and this showed up. It
-                  has 11.6 million followers at this point, so I'm at least
-                  someone would recommend them. After scanning their page pretty
-                  quickly, I think their videos are more on the cute side rather
+                  has 11.6 million followers at this point, so I'm sure at least
+                  someone would recommend them. After doing a quick scan of their page, 
+                  I think their videos are more on the cute side rather
                   than derpy or funny cat side. I personally like the derp, but
                   I definitely see the appeal of the cute.
                 </Typography>
@@ -159,11 +158,11 @@ class BlogPost2 extends Component {
                 <Typography variant="body1" className={classes.listBody}>
                   So this one also came up when I searched "cats" on instagram,
                   but it seems to have more of the derp vibe that I talked about
-                  in the last point. It has 1.1 million followers which is
+                  in the last point. It only has 1.1 million followers which is
                   nothing to scoff at, but significantly less than
                   @cats_of_instagram! After looking at their page for a bit,
                   they're definitely catering towards those who like cat memes
-                  other funny cat media. Definitely up my alley.
+                  other funny cat media. Definitely up my alley. Good.
                 </Typography>
               </ListItem>
             </List>
