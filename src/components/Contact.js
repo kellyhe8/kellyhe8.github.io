@@ -229,7 +229,7 @@ const Contact = () => {
                 size="2x"
                 className={classes.iconStyle}
               />
-              <Typography style={{ fontSize: "1rem" }}>Linkedin</Typography>
+              <Typography style={{ fontSize: "1rem" }}></Typography>
             </Box>
           </IconButton>
 
@@ -240,7 +240,7 @@ const Contact = () => {
                 size="2x"
                 className={classes.iconStyle}
               />
-              <Typography style={{ fontSize: "1rem" }}>Github</Typography>
+              <Typography style={{ fontSize: "1rem" }}></Typography>
             </Box>
           </IconButton>
           {/* <IconButton href="https://github.com/kellyhesf" target="_blank">
