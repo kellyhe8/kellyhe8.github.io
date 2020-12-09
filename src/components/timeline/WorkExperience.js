@@ -142,6 +142,28 @@ const WorkExperience = () => {
             more in depth descriptions about my work
           </Typography> */}
           <Box className={classes.timeline} component="div">
+          <Typography
+              className={`${classes.timelineYear} ${classes.timelineItem}`}
+              variant="h2"
+            >
+              2021
+            </Typography>
+            <WorkExperienceEntry
+              company="Citadel | Citadel Securities"
+              role="Software Engineering Intern"
+              location="NYC, NY"
+              date="Upcoming: Jun 2021 - Aug 2021"
+              description="I'm not quite sure about project and team details yet :)"
+              
+            />
+            <WorkExperienceEntry
+              company="Facebook"
+              role="Software Engineering Intern"
+              location="Menlo Park, CA (remote)"
+              date="Upcoming: Jan 2021 - Mar 2021"
+              description="I'll be working on the Community Products Integrity team!"
+              
+            />
             <Typography
               className={`${classes.timelineYear} ${classes.timelineItem}`}
               variant="h2"
