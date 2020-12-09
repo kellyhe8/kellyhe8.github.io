@@ -33,8 +33,8 @@ const useStyles = makeStyles((theme) => ({
   avatar: {
     display: "block",
     margin: theme.spacing(3),
-    width: theme.spacing(20), // different way to set size of avatar pic
-    height: theme.spacing(20),
+    width: theme.spacing(25), // different way to set size of avatar pic
+    height: theme.spacing(25),
     // borderRadius: "0.5rem",
     // border: `.1rem ${theme.palette.accent2.main} solid`,
   },
