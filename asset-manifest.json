@@ -1,23 +1,24 @@
 {
   "files": {
     "main.css": "/static/css/main.f01f0ec1.chunk.css",
-    "main.js": "/static/js/main.a31ca640.chunk.js",
-    "main.js.map": "/static/js/main.a31ca640.chunk.js.map",
+    "main.js": "/static/js/main.63323f0e.chunk.js",
+    "main.js.map": "/static/js/main.63323f0e.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.9317e12e.js",
     "runtime-main.js.map": "/static/js/runtime-main.9317e12e.js.map",
-    "static/js/2.3467f0d7.chunk.js": "/static/js/2.3467f0d7.chunk.js",
-    "static/js/2.3467f0d7.chunk.js.map": "/static/js/2.3467f0d7.chunk.js.map",
+    "static/js/2.b0240059.chunk.js": "/static/js/2.b0240059.chunk.js",
+    "static/js/2.b0240059.chunk.js.map": "/static/js/2.b0240059.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.020843bc26d6ef95161cf04c6ce26248.js": "/precache-manifest.020843bc26d6ef95161cf04c6ce26248.js",
+    "precache-manifest.82d2e035a6be693deeacc78f4785bac8.js": "/precache-manifest.82d2e035a6be693deeacc78f4785bac8.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.f01f0ec1.chunk.css.map": "/static/css/main.f01f0ec1.chunk.css.map",
-    "static/js/2.3467f0d7.chunk.js.LICENSE.txt": "/static/js/2.3467f0d7.chunk.js.LICENSE.txt",
+    "static/js/2.b0240059.chunk.js.LICENSE.txt": "/static/js/2.b0240059.chunk.js.LICENSE.txt",
     "static/media/Kelly_He_Resume.pdf": "/static/media/Kelly_He_Resume.6138a218.pdf",
     "static/media/angrycat.jpg": "/static/media/angrycat.95adb881.jpg",
     "static/media/animal.jpg": "/static/media/animal.22c8f74b.jpg",
     "static/media/background1.png": "/static/media/background1.e836a538.png",
     "static/media/chapstick.png": "/static/media/chapstick.2b081bd9.png",
     "static/media/drawavatarnobkg.png": "/static/media/drawavatarnobkg.3b1fe377.png",
+    "static/media/fonts.svg": "/static/media/fonts.2e806a1d.svg",
     "static/media/me2.jpg": "/static/media/me2.a7396ad1.jpg",
     "static/media/mitpurell.jpg": "/static/media/mitpurell.0655b758.jpg",
     "static/media/salesforcedemo.mov": "/static/media/salesforcedemo.a264f558.mov",
@@ -25,8 +26,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.9317e12e.js",
-    "static/js/2.3467f0d7.chunk.js",
+    "static/js/2.b0240059.chunk.js",
     "static/css/main.f01f0ec1.chunk.css",
-    "static/js/main.a31ca640.chunk.js"
+    "static/js/main.63323f0e.chunk.js"
   ]
 }
