@@ -46,10 +46,11 @@ const theme = createMuiTheme({
     fontWeightMedium: 500, // unused?
     fontWeightBold: 900,
     fontFamily: [
+      "Avenir-Medium",
       "Questrial",
       "Lato",
       "Clear Sans",
-      
+
       "Futura",
       "Source Sans Pro",
       "Helvetica",

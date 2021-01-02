@@ -7,8 +7,9 @@ import { makeStyles } from "@material-ui/core/styles";
 import BlogListEntry from "./BlogPosts/BlogListEntry";
 import animalImg from "../img/animal.jpg";
 import angryCatImg from "../img/angrycat.jpg";
-import mitpurell from "../img/mitpurell.jpg";
+// import mitpurell from "../img/mitpurell.jpg";
 import chapstick from "../img/chapstick.png";
+import fonts from "../img/fonts.svg"
 
 const useStyles = makeStyles((theme) => ({
   middleContainer: {
@@ -64,6 +65,13 @@ const Blogs = () => {
         >
           attempting to write
         </Typography> */}
+        <BlogListEntry
+          image={fonts}
+          title='Font Families Reference'
+          subtitle='A reference of React font families'
+          bloglink="/blogpost5"
+          date="January 1, 2021 - 7:15 PM"
+        />
         <BlogListEntry
           image={chapstick}
           title="This Chapstick"
