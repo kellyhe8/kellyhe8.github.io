@@ -2,8 +2,8 @@ import React from "react"; // rafce is shortcut
 import { Typography, Avatar, Grid, Box } from "@material-ui/core";
 import Typed from "react-typed";
 import { makeStyles } from "@material-ui/core/styles";
-import avatar from "../img/me2.jpg";
-import backgroundImg from "../img/background1.png";
+import avatar from "../img/me6.jpg";
+import backgroundImg from "../img/background14a.png";
 
 // CSS STYLES
 const useStyles = makeStyles((theme) => ({
@@ -60,18 +60,18 @@ const Intro = () => {
         <Avatar className={classes.avatar} src={avatar} alt="kelly he" />
       </Grid>
       <Typography className={classes.title} variant="h4">
-        HIII I'M <span className={classes.highlight2}>Kelly</span>
+        Hey I'm <span className={classes.highlight2}>Kelly</span>
         {/* <Typed strings={["hey i'm kelly"]} typeSpeed={80}></Typed> */}
       </Typography>
       <Typography className={classes.subtitle} variant="h5">
         <Typed
           strings={[
             "Welcome to my website!",
-            "I'm a college junior studying Electrical Engineering and Computer Science",
-            "Feel free to give me feedback on the site and contact me in the box at the bottom of the page",
+            "I'm a new grad and software engineer",
+            "I graduated from MIT in 2022 with a Bachelor's Degree in Electrical Engineering and Computer Science",
+            "Feel free to give me feedback on the site and contact me at the bottom of the page",
             "I built this using React and Material UI",
             "You can find the code on my github",
-            "This font's question mark is interesting; howdy do??!",
           ]}
           typeSpeed={25}
           loop

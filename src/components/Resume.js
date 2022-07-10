@@ -51,9 +51,9 @@ const Resume = () => {
     <>
       <Navbar />
       <Box className={classes.resumeBox}>
-        <Box style={{textAlign: "right"}}>
+        <Box style={{ textAlign: "right" }}>
           <Button href={resumepdf}>
-          <GetAppIcon/>Open Full Resume PDF
+            <GetAppIcon />PDF
           </Button>
         </Box>
         <img src={resume} alt="Resume" className={classes.resume} />

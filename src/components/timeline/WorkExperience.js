@@ -142,27 +142,44 @@ const WorkExperience = () => {
             more in depth descriptions about my work
           </Typography> */}
           <Box className={classes.timeline} component="div">
-          <Typography
+            <Typography
+              className={`${classes.timelineYear} ${classes.timelineItem}`}
+              variant="h2"
+            >
+              2022
+            </Typography>
+            <WorkExperienceEntry
+              company="Citadel Securities"
+              role="Software Engineer"
+              location="NYC, NY"
+              date="Sep 2022"
+              description=""
+            />
+            <Typography
               className={`${classes.timelineYear} ${classes.timelineItem}`}
               variant="h2"
             >
               2021
             </Typography>
             <WorkExperienceEntry
-              company="Citadel | Citadel Securities"
+              company="Citadel"
               role="Software Engineering Intern"
               location="NYC, NY"
-              date="Upcoming: Jun 2021 - Aug 2021"
-              description="I'm not quite sure about project and team details yet :)"
-              
+              date="Jun 2021 - Aug 2021"
+              description="I was on the Equities Tech team! I designed the backend data model for a web application to monitor SPACs,
+              and then created the backend GraphQL API and web app functionality using Flask and SQLalchemy. I also helped with
+              parts of the front end design for the application too!"
             />
             <WorkExperienceEntry
               company="Facebook"
               role="Software Engineering Intern"
               location="Menlo Park, CA (remote)"
-              date="Upcoming: Jan 2021 - Mar 2021"
-              description="I'll be working on the Community Products Integrity team!"
-              
+              date="Jan 2021 - Mar 2021"
+              description="I worked on the Community Products Integrity team, which means we looked at things
+              that uphold community integrity, like reporting or flagging posts.
+              I implemented a screen that allows users to specify which rules were broken when reporting
+              a post within a group to the group admin."
+
             />
             <Typography
               className={`${classes.timelineYear} ${classes.timelineItem}`}
@@ -175,11 +192,11 @@ const WorkExperience = () => {
               role="Software Engineering Intern"
               location="Cambridge, MA"
               date="Sep 2020 - Dec 2020"
-              description="I'm currently working at Cogo Labs, whose mission is to launch and accelerate internet companies with our data, tech and analytics!
+              description="Cogo Labs' mission is to launch and accelerate internet companies with our data, tech and analytics!
               I'm working on a project with 3 other interns to identify viable public companies that have potential to 
-              excel from stagnation. We're currently figuring out how to isolate unsuccessful and successful
-              traits and create a machine learning model, working with SQL databases and Python to do so."
-              
+              excel from stagnation. We looked into how to isolate unsuccessful and successful
+              traits for small cap companies and create a machine learning model using SQL and Python."
+
             />
             <WorkExperienceEntry
               company="Salesforce"
@@ -205,7 +222,7 @@ const WorkExperience = () => {
             <WorkExperienceEntry
               company="Youth Global Network: Project-C"
               role="Software Engineering Intern"
-              location="Sha Tin, Hong Kong" 
+              location="Sha Tin, Hong Kong"
               date="Jun 2019 - Aug 2019"
               description="Project-C's mission is to teach underprivileged children coding by providing an easy-to-learn app development 
               platform. During my internship, I analyzed data about the students using this platform, and 
