@@ -1,33 +1,32 @@
 {
   "files": {
     "main.css": "/static/css/main.f01f0ec1.chunk.css",
-    "main.js": "/static/js/main.2dd9fdc7.chunk.js",
-    "main.js.map": "/static/js/main.2dd9fdc7.chunk.js.map",
+    "main.js": "/static/js/main.537b5a23.chunk.js",
+    "main.js.map": "/static/js/main.537b5a23.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.9317e12e.js",
     "runtime-main.js.map": "/static/js/runtime-main.9317e12e.js.map",
-    "static/js/2.b0240059.chunk.js": "/static/js/2.b0240059.chunk.js",
-    "static/js/2.b0240059.chunk.js.map": "/static/js/2.b0240059.chunk.js.map",
+    "static/js/2.584025e9.chunk.js": "/static/js/2.584025e9.chunk.js",
+    "static/js/2.584025e9.chunk.js.map": "/static/js/2.584025e9.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.013bc6ab5d5e50813cc26963632aa0fa.js": "/precache-manifest.013bc6ab5d5e50813cc26963632aa0fa.js",
+    "precache-manifest.c1ae620048226fb387648bea0629b369.js": "/precache-manifest.c1ae620048226fb387648bea0629b369.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.f01f0ec1.chunk.css.map": "/static/css/main.f01f0ec1.chunk.css.map",
-    "static/js/2.b0240059.chunk.js.LICENSE.txt": "/static/js/2.b0240059.chunk.js.LICENSE.txt",
+    "static/js/2.584025e9.chunk.js.LICENSE.txt": "/static/js/2.584025e9.chunk.js.LICENSE.txt",
     "static/media/Kelly_He_Resume.pdf": "/static/media/Kelly_He_Resume.c3eeea75.pdf",
     "static/media/angrycat.jpg": "/static/media/angrycat.95adb881.jpg",
     "static/media/animal.jpg": "/static/media/animal.22c8f74b.jpg",
-    "static/media/background14a.png": "/static/media/background14a.e78c0f5a.png",
+    "static/media/background4.jpeg": "/static/media/background4.726c77aa.jpeg",
     "static/media/chapstick.png": "/static/media/chapstick.2b081bd9.png",
-    "static/media/drawavatarnobkg.png": "/static/media/drawavatarnobkg.3b1fe377.png",
     "static/media/fonts.svg": "/static/media/fonts.2e806a1d.svg",
-    "static/media/me6.jpg": "/static/media/me6.19ca677b.jpg",
+    "static/media/me7.jpeg": "/static/media/me7.15749034.jpeg",
     "static/media/mitpurell.jpg": "/static/media/mitpurell.0655b758.jpg",
     "static/media/salesforcedemo.mov": "/static/media/salesforcedemo.a264f558.mov",
     "static/media/websiteresume.png": "/static/media/websiteresume.08bde86b.png"
   },
   "entrypoints": [
     "static/js/runtime-main.9317e12e.js",
-    "static/js/2.b0240059.chunk.js",
+    "static/js/2.584025e9.chunk.js",
     "static/css/main.f01f0ec1.chunk.css",
-    "static/js/main.2dd9fdc7.chunk.js"
+    "static/js/main.537b5a23.chunk.js"
   ]
 }
