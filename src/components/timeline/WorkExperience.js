@@ -32,7 +32,7 @@ const useStyles = makeStyles((theme) => ({
       content: "''", // need double quotes otherwise wont' work?
       position: "absolute",
       height: "100%",
-      border: `1px white solid`,
+      border: `1px ${theme.palette.accent2.dark} solid`, // vertical timeline
       right: "20px",
       top: 0,
     },
@@ -78,7 +78,7 @@ const useStyles = makeStyles((theme) => ({
       "&:nth-of-type(2n)": {
         float: "right",
         margin: "1rem",
-        borderColor: theme.palette.accent2.main, // bottom line of item
+        borderColor: theme.palette.accent1.main, // bottom line of item
       },
       "&:nth-of-type(2n):before": {
         right: "auto",
@@ -91,8 +91,8 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
     maxWidth: "6.5rem",
     margin: "0 3rem 0 auto",
-    fontSize: "1.5rem",
-    background: theme.palette.accent1.main,
+    fontSize: "1.3rem",
+    background: theme.palette.accent1.light,
     // color: "white",
     lineheight: 1,
     padding: "0.5rem 1rem", // 0.5rem 0 1rem
@@ -131,7 +131,7 @@ const WorkExperience = () => {
       {/* <Navbar /> */}
       <Box className={classes.mainContainer} component="header">
         <Box className={classes.contentArea}>
-          <Typography className={classes.heading} variant="h4" align="center">
+          <Typography className={classes.heading} variant="h5" align="center">
             Software Experience
           </Typography>
           {/* <Typography
@@ -144,7 +144,7 @@ const WorkExperience = () => {
           <Box className={classes.timeline} component="div">
             <Typography
               className={`${classes.timelineYear} ${classes.timelineItem}`}
-              variant="h2"
+              variant="h3"
             >
               2022
             </Typography>
@@ -153,11 +153,11 @@ const WorkExperience = () => {
               role="Software Engineer"
               location="NYC, NY"
               date="Sep 2022"
-              description=""
+              description="I'm currently on CES."
             />
             <Typography
               className={`${classes.timelineYear} ${classes.timelineItem}`}
-              variant="h2"
+              variant="h3"
             >
               2021
             </Typography>
@@ -166,24 +166,23 @@ const WorkExperience = () => {
               role="Software Engineering Intern"
               location="NYC, NY"
               date="Jun 2021 - Aug 2021"
-              description="I was on the Equities Tech team! I designed the backend data model for a web application to monitor SPACs,
-              and then created the backend GraphQL API and web app functionality using Flask and SQLalchemy. I also helped with
-              parts of the front end design for the application too!"
+              description="I designed the backend data model for a web application to monitor SPACs as part of the Equities Tech team.
+              I created a backend GraphQL API and web app functionality using Flask and SQLalchemy. I also helped with
+              parts of the front end design."
             />
             <WorkExperienceEntry
               company="Facebook"
               role="Software Engineering Intern"
               location="Menlo Park, CA (remote)"
               date="Jan 2021 - Mar 2021"
-              description="I worked on the Community Products Integrity team, which means we looked at things
-              that uphold community integrity, like reporting or flagging posts.
-              I implemented a screen that allows users to specify which rules were broken when reporting
+              description="I worked on the Community Products Integrity team, which manages design that uphold community integrity - things like reporting or flagging.
+              I personally implemented a screen that allows users to specify which rules were broken when reporting
               a post within a group to the group admin."
 
             />
             <Typography
               className={`${classes.timelineYear} ${classes.timelineItem}`}
-              variant="h2"
+              variant="h3"
             >
               2020
             </Typography>
@@ -192,10 +191,10 @@ const WorkExperience = () => {
               role="Software Engineering Intern"
               location="Cambridge, MA"
               date="Sep 2020 - Dec 2020"
-              description="Cogo Labs' mission is to launch and accelerate internet companies with our data, tech and analytics!
-              I'm working on a project with 3 other interns to identify viable public companies that have potential to 
+              description="Cogo Labs' mission is to launch and accelerate startup companies by leveraging their tech and analytics.
+              I worked on a project with 3 other interns to identify viable public companies that have potential to 
               excel from stagnation. We looked into how to isolate unsuccessful and successful
-              traits for small cap companies and create a machine learning model using SQL and Python."
+              traits for small cap companies and created a machine learning model using SQL and Python."
 
             />
             <WorkExperienceEntry
@@ -203,7 +202,7 @@ const WorkExperience = () => {
               role="Software Engineering Intern"
               location="Burlington, MA (remote)"
               date="Jun 2020 - Aug 2020"
-              description="I created a Google Assistant e-commerce application! The project helps showcase the potential of headless commerce
+              description="I integrated Google Assistant with the Salesforce e-commerce platform. The project helps showcase the potential of headless commerce
               to deliver shopping experiences on new and innovative platforms. It also enhanced the shopping experience for 
               for people with visual impairments. I set a precedence for modular front end devlopment by utilizing the 
               back end for front end (BFF) pattern. The BFF's function was to resolve data from the commerce SDK and create a GraphQL API. 
@@ -215,7 +214,7 @@ const WorkExperience = () => {
             />
             <Typography
               className={`${classes.timelineYear} ${classes.timelineItem}`}
-              variant="h2"
+              variant="h3"
             >
               2019
             </Typography>
@@ -230,7 +229,7 @@ const WorkExperience = () => {
               frequency of app components, and tutorial completion time. Near the end, I began creating teacher
               reports pages to provide a portal for them to see and best utilize these results."
             />
-            <WorkExperienceEntry
+            {/* <WorkExperienceEntry
               company="Hosta Labs"
               role="Software Engineering Extern"
               location="Cambridge, MA"
@@ -239,7 +238,7 @@ const WorkExperience = () => {
               I compared the accuracy of their depth perception algorithms to those built-in on newer iPhones. 
               I also worked on the iOS application, displaying a mock 3D model in the app, which provided a proof
               of concept for the generated models to go."
-            />
+            /> */}
           </Box>
         </Box>
       </Box>

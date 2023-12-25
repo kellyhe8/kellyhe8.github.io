@@ -1,9 +1,8 @@
 import React from "react"; // rafce is shortcut
-import { Typography, Avatar, Grid, Box } from "@material-ui/core";
+import { Typography, Box } from "@material-ui/core";
 import Typed from "react-typed";
 import { makeStyles } from "@material-ui/core/styles";
-import avatar from "../img/me6.jpg";
-import backgroundImg from "../img/background14a.png";
+import backgroundImg from "../img/background4.jpeg";
 
 // CSS STYLES
 const useStyles = makeStyles((theme) => ({
@@ -22,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
     background: `url(${backgroundImg}) repeat center center`,
     zIndex: 1, // specifies stack order
     // border: "2px white solid",
-    borderBottom: `3px ${theme.palette.primary.light} solid`,
+    borderBottom: `2px ${theme.palette.primary.light} solid`,
     [theme.breakpoints.down("xl")]: {
       height: "600px",
     },
@@ -33,8 +32,8 @@ const useStyles = makeStyles((theme) => ({
   avatar: {
     display: "block",
     margin: theme.spacing(3),
-    width: theme.spacing(25), // different way to set size of avatar pic
-    height: theme.spacing(25),
+    width: theme.spacing(22), // different way to set size of avatar pic
+    height: theme.spacing(22),
     // borderRadius: "0.5rem",
     // border: `.1rem ${theme.palette.accent2.main} solid`,
   },
@@ -56,22 +55,22 @@ const Intro = () => {
 
   return (
     <Box className={classes.contentArea}>
-      <Grid container justify="center">
+      {/* <Grid container justify="center">
         <Avatar className={classes.avatar} src={avatar} alt="kelly he" />
-      </Grid>
-      <Typography className={classes.title} variant="h4">
-        Hey I'm <span className={classes.highlight2}>Kelly</span>
+      </Grid> */}
+      <Typography className={classes.title} variant="h5">
+        Hi I'm <span className={classes.highlight2}>Kelly</span>
         {/* <Typed strings={["hey i'm kelly"]} typeSpeed={80}></Typed> */}
       </Typography>
-      <Typography className={classes.subtitle} variant="h5">
+      <Typography className={classes.subtitle} variant="h6">
         <Typed
           strings={[
             "Welcome to my website!",
-            "I'm a new grad and software engineer",
+            "I'm currently a full time Software Engineer at Citadel Securities",
             "I graduated from MIT in 2022 with a Bachelor's Degree in Electrical Engineering and Computer Science",
-            "Feel free to give me feedback on the site and contact me at the bottom of the page",
-            "I built this using React and Material UI",
-            "You can find the code on my github",
+            // "Feel free to give me feedback on the site and contact me at the bottom of the page",
+            // "I built this using React and Material UI",
+            // "You can find the code on my github",
           ]}
           typeSpeed={25}
           loop

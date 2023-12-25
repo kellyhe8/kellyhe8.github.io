@@ -11,7 +11,7 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
     fontSize: "2rem",
     lineHeight: "1.15rem",
-    borderBottom: `1px white solid`,
+    borderBottom: `1px ${theme.palette.accent1.main} solid`,
     padding: "0 0 1em 0",
     [theme.breakpoints.down("md")]: {
       margin: "1em 0 .3em 0",

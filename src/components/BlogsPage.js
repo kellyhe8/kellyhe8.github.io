@@ -3,7 +3,7 @@ import Navbar from "./navmenu/Navbar";
 import Contact from "./Contact";
 import { Typography, Box } from "@material-ui/core";
 // import { useTheme } from "@material-ui/core/styles";
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles, useTheme } from "@material-ui/core/styles";
 import BlogListEntry from "./BlogPosts/BlogListEntry";
 import animalImg from "../img/animal.jpg";
 import angryCatImg from "../img/angrycat.jpg";
@@ -36,6 +36,7 @@ const useStyles = makeStyles((theme) => ({
 
 const Blogs = () => {
   const classes = useStyles();
+  const theme = useTheme();
   return (
     <>
       <Navbar />
@@ -48,7 +49,7 @@ const Blogs = () => {
             textAlign: "center",
             fontSize: "2rem",
             lineHeight: "1.15rem",
-            borderBottom: `1px white solid`,
+            borderBottom: `1px ${theme.palette.accent1.main} solid`,
           }}
         >
           Blog

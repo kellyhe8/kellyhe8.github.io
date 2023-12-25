@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     background: theme.palette.accent2.main,
     height: "600px",
-    borderTop: `3px ${theme.palette.primary.light} solid`,
+    borderTop: `2px ${theme.palette.primary.light} solid`,
     // border: "2px white solid",
   },
   form: {

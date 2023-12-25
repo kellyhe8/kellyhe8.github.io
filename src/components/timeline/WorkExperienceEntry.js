@@ -46,7 +46,7 @@ const styles = (theme) => ({
     textAlign: "center",
     maxWidth: "6.5rem",
     margin: "0 2rem 0 auto",
-    fontSize: "1.5rem",
+    fontSize: "1.3rem",
     background: theme.palette.accent1.main,
     // color: "white",
     lineheight: 1,
@@ -81,7 +81,7 @@ const WorkExperienceEntry = (props) => {
     <>
       <Box className={classes.timelineItem} component="div">
         <Typography // company style
-          variant="h5"
+          variant="h6"
           style={{
             // color: "white",
             textAlign: "center",
@@ -107,7 +107,7 @@ const WorkExperienceEntry = (props) => {
           variant="subtitle1" // description style
           style={{
             // color: theme.palette.accent1.main,
-            fontSize: "1rem",
+            fontSize: "0.9rem",
             // fontWeight: "",
             textAlign: "justify",
             // textTransform: "lowercase",
@@ -125,7 +125,7 @@ const WorkExperienceEntry = (props) => {
           {props.description}
         </Typography>
         {props.video && (
-          <video width="200" height="400" src={props.video} controls></video>
+          <video width="180" height="380" src={props.video} controls></video>
         )}
       </Box>
     </>

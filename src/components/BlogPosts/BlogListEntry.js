@@ -58,7 +58,7 @@ const BlogListEntry = (props) => {
           <Box className={classes.avatarBox}>
             <Link
               to={props.bloglink}
-              style={{ color: "white", textDecoration: "none" }}
+              style={{ color: theme.palette.textColors.dark, textDecoration: "none" }}
             >
               <img
                 alt="blog"
@@ -70,16 +70,16 @@ const BlogListEntry = (props) => {
           <Box className={classes.wordBox}>
             <Link
               to={props.bloglink}
-              style={{ color: "white", textDecoration: "none" }}
+              style={{ color: theme.palette.textColors.dark, textDecoration: "none" }}
             >
-              <MUILink variant="h6" style={{ color: "white" }}>
+              <MUILink variant="h6" style={{ color: theme.palette.textColors.dark }}>
                 {props.title}
               </MUILink>
             </Link>
             <Typography
               variant="body1"
               style={{
-                color: theme.palette.accent1.main,
+                color: theme.palette.accent1.light,
                 lineHeight: "1.5rem",
               }}
             >
@@ -88,7 +88,7 @@ const BlogListEntry = (props) => {
             <Typography
               variant="body2"
               style={{
-                color: theme.palette.primary.light,
+                color: theme.palette.accent1.main,
                 lineHeight: "1.5rem",
               }}
             >

@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
 import MobileRightMenuSlider from "@material-ui/core/Drawer";
+import { Grid } from "@material-ui/core"
 import Footer from "./Footer";
-import favicon from "../../img/drawavatarnobkg.png";
+import favicon from "../../img/me7.jpeg";
 
 import {
   AppBar,
@@ -45,7 +46,7 @@ const useStyles = makeStyles((theme) => ({
     margin: "1rem auto",
   },
   appbarContent: {
-    borderBottom: `3px ${theme.palette.primary.light} solid`,
+    borderBottom: `2px ${theme.palette.primary.light} solid`,
     alignItems: "center",
     background: theme.palette.primary.dark,
   },
@@ -114,8 +115,11 @@ const Navbar = () => {
       component="div"
       onClick={toggleSlider(slider, false)}
     >
-      <img className={classes.avatar} src={favicon} alt=""></img>
-      <Typography variant="h5" align="center" style={{ margin: "1rem" }}>
+      <Grid container justify="center">
+        <Avatar className={classes.avatar} src={favicon} alt="kelly he" />
+      </Grid>
+      {/* <img className={classes.avatar} src={favicon} alt=""></img> */}
+      <Typography variant="h6" align="center" style={{ marginBottom: "1rem" }}>
         Kelly He
       </Typography>
       <Divider />
@@ -143,7 +147,7 @@ const Navbar = () => {
         <AppBar position="static" className={classes.appbarContent}>
           <Toolbar className={classes.contentArea}>
             <Link to="/">
-              <Avatar src={favicon} variant="square" alt="kh"></Avatar>
+              <Avatar src={favicon} variant="circle" alt="kh"></Avatar>
             </Link>
 
             {/* <Typography variant="h5">
